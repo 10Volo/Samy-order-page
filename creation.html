@@ -6,10 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Creative</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
     <link rel="stylesheet" href="app/css/creation.css">
+
+
+
+
+
+    <!--for date picker-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
 </head>
 <body>
 <header>
@@ -19,10 +32,14 @@
     <div class="header-menu-nav">
         <div class="menu">
             <ul>
-                <li class="items"><a href=""><img src="app/img/header/content-img-1.png" alt="" width="36" height="28">Create</a></li>
-                <li class="items"><a href=""><img src="app/img/header/content-img-2.png" alt="" width="34" height="27">Report</a></li>
-                <li class="items"><a href=""><img src="app/img/header/content-img-3.png" alt="" width="43" height="24">Optimize</a></li>
-                <li class="items"><a href=""><img src="app/img/header/content-img-4.png" alt="" width="26" height="28">Analyze </a></li>
+                <li class="items"><a href=""><img src="app/img/header/content-img-1.png" alt="" width="36" height="28">Create</a>
+                </li>
+                <li class="items"><a href=""><img src="app/img/header/content-img-2.png" alt="" width="34" height="27">Report</a>
+                </li>
+                <li class="items"><a href=""><img src="app/img/header/content-img-3.png" alt="" width="43" height="24">Optimize</a>
+                </li>
+                <li class="items"><a href=""><img src="app/img/header/content-img-4.png" alt="" width="26" height="28">Analyze
+                </a></li>
             </ul>
         </div>
         <div class="toggle" onclick="menu_toggle(this.parentNode)">
@@ -43,25 +60,1117 @@
         </div>
     </div>
 </header>
+<section class="steps">
+    <div class="container">
+        <ul>
+            <li><a href="" class="active">(1) Objective</a></li>
+            <li><a href="">(2) Adcopy</a></li>
+            <li><a href="">(3) Targeting</a></li>
+            <li><a href="">(4) Budget</a></li>
+            <li><a href="">(5) Review</a></li>
+        </ul>
+    </div>
+</section>
 <section class="content-wrapper">
     <div class="row">
         <div class="col-sm-6">
             <div class="content-left-wrapper" id="scroll-1">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus architecto commodi, eaque enim fuga fugit hic impedit neque odio odit porro quibusdam, quidem quisquam, reiciendis repellendus saepe ullam vel vitae voluptas. Alias assumenda atque aut corporis cumque, dolorem dolores earum enim est expedita fuga ipsum, nihil nostrum odit officia officiis porro quia quis quo similique suscipit tempora tenetur totam! Alias cumque dicta eaque excepturi fugit harum illum ipsam ipsum labore laboriosam libero molestiae odit officia pariatur perspiciatis porro praesentium qui quos reprehenderit repudiandae sint sit suscipit velit veniam, vitae voluptatem voluptatum. Consequuntur culpa ducimus, earum explicabo nam neque rerum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, blanditiis error est in perspiciatis porro quis repellendus tempora, vel veniam veritatis voluptas, voluptatibus! Doloremque doloribus eos id illum iure labore numquam possimus, sequi tempore voluptas! A aliquid consectetur delectus distinctio dolor ducimus eligendi ex facilis hic impedit in, ipsa, iure, minus molestias non officia possimus reiciendis rem sequi tenetur vel voluptas voluptatibus. A architecto deserunt dolores, ducimus ex hic iure maxime officiis optio provident quisquam recusandae rem rerum sit suscipit velit veniam. A asperiores assumenda blanditiis deleniti dignissimos, ex excepturi labore mollitia neque obcaecati, officiis optio quidem repudiandae similique suscipit ullam ut. Commodi corporis earum, facilis itaque natus, nulla numquam perferendis quaerat quidem, quo sit temporibus voluptate voluptatum. Accusantium error, exercitationem fuga fugiat maxime modi molestiae sapiente ut voluptate. Aliquam eius mollitia repellat veritatis vero? Ab architecto eaque illum temporibus. Iure minima mollitia nemo neque odit placeat quidem repellendus vel!</p>
+                <div class="lp-line"></div>
+                <div class="lp-new-campaign">
+                    <div class="campaign-title upload-title-items">
+                        <span>Would You Like To Load or Create a New Campaign?</span>
+                    </div>
+                    <div class="campaign-btn">
+                        <div class="campaign-link">
+                            <a class="m-btn active" href="">Create New Campaign</a>
+                        </div>
+                        <div class="campaign-link">
+                            <a class="m-btn" href="">Load a Saved Campaign</a>
+                        </div>
+                    </div>
+                    <div class="lp-line"></div>
+                    <div class="lp-ad-title upload-title-items">
+                        <span>
+                            Ad Headline
+                        </span>
+                    </div>
+                    <div class="m-input-wrapper">
+                        <input class="m-input" type="text">
+                    </div>
+                    <div class="upload-title upload-title-items">
+                        <span>Select/Upload Your Media</span>
+                    </div>
+                    <div class="upload-image-video">
+                        <div class="upload-content-wrapper">
+                            <div class="switch-color">
+                                <a href="" class="m-btn btn-primary">
+                                    <img src="app/img/content/img.png" alt="">
+                                    Submit with img
+                                </a>
+                            </div>
+                        </div>
+                        <div class="upload-content-wrapper">
+                            <div class="switch-color">
+                                <a href="" class="m-btn btn-primary">
+                                    <img src="app/img/content/play.png" alt="">
+                                    Submit with img
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-line"></div>
+                    <div class="upload-liberty-title upload-title-items">
+                        <span>Choose From Library</span>
+                    </div>
+                    <div class="upload-btn">
+                        <div class="upload-nav">
+                            <div class="upload-btn-wrapper">
+                                <button><span><img src="app/img/content/refresh.png" alt="">Refresh</span></button>
+                            </div>
+                            <div class="upload-btn-wrapper">
+                                <label for="files">
+                                    <span><img src="app/img/content/cloud.png" alt="">Upload Image</span>
+                                </label>
+                                <input type="file" id="files" multiple/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-preview-wrapper">
+                        <div class="upload-preview" id="scroll-1">
+                            <div class="upload-img-wrapper">
+                                <img src="app/img/content/upload-img-1.png" alt="">
+                            </div>
+                            <div class="upload-img-wrapper">
+                                <img src="app/img/content/upload-img-2.png" alt="">
+                            </div>
+                            <div class="upload-img-wrapper">
+                                <img src="app/img/content/upload-img-3.png" alt="">
+                            </div>
+                            <div class="upload-img-wrapper">
+                                <img src="app/img/content/upload-img-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-ok">
+                        <div class="link-ok-wrapper">
+                            <a href="" class="m-btn btn-secondary">OK</a>
+                        </div>
+                    </div>
+                    <div class="upload-choose-conversion">
+                        <span class="upload-title-conversion upload-title-items">Choose Your Facebook Conversion Pixel Type</span>
+                        <span class="upload-description-conversion">Choose Your Facebook Conversion Pixel Type</span>
+                        <div class="upload-choose-conversion-btn">
+                            <select name="" id="" class="m-select">
+                                <option value="" selected="selected" disabled="disabled">Type or select an option</option>
+                                <option value="">Item #1</option>
+                                <option value="">Item #2</option>
+                                <option value="">Item #3</option>
+                                <option value="">Item #4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="lp-line"></div>
+                    <div class="upload-message-audience">
+                        <img src="app/img/content/content7-img1.png" alt="">
+                        <p>Great Job With Your Ads! Now Let’s Define Who You Want To See Those Beautiful Ads.</p>
+                    </div>
+                    <div class="upload-continue-btn">
+                        <a href="" class="m-btn btn-secondary">Continue to Targeting</a>
+                    </div>
+                    <div class="upload-line-block"></div>
+                    <div class="upload-custom-audience">
+                        <span class="upload-title-items">Will You Be Targeting a Facebook Custom Audience?</span>
+                        <div class="upload-custom-audience-btn">
+                            <a href="" class="m-btn">Yes</a>
+                            <a href="" class="m-btn">No</a>
+                        </div>
+                    </div>
+                    <div class="upload-choose-audience">
+                        <span class="upload-title-items">Choose Your Custom Audience</span>
+                        <div class="upload-choose-audience-btn">
+                            <select name="" id="" class="m-select">
+                                <option value="" selected="selected" disabled="disabled">Type or select an option</option>
+                                <option value="">Item #1</option>
+                                <option value="">Item #2</option>
+                                <option value="">Item #3</option>
+                                <option value="">Item #4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="step4-spend-money">
+                        <div class="step4-title">
+                            <span class="upload-title-items">How Much Would You Like to Spend per Day per Adset?</span>
+                        </div>
+                        <div class="m-input-wrapper">
+                            <input class="m-input" type="text">
+                        </div>
+                    </div>
+                    <div class="upload-line-block"></div>
+                    <div class="step4-when-start">
+                        <div class="step4-title">
+                            <span class="upload-title-items">When Would You Like Your Campaign To Start?</span>
+                        </div>
+                        <div class="m-input-img-wrapper">
+                            <input class="m-input" type="text" placeholder="mm / dd / yyyy" id="datepicker">
+                        </div>
+                    </div>
+                    <div class="upload-line-block"></div>
+                    <div class="upload-message-audience">
+                        <img src="app/img/content/content7-img1.png" alt="">
+                        <p>Awesome, You Are Almost Done!
+                            Lets Review Your Campaign Before We Publish It!</p>
+                    </div>
+                    <div class="upload-continue-btn">
+                        <a href="" class="m-btn btn-secondary">Continue to Review</a>
+                    </div>
+                    <div class="upload-line-block"></div>
+                    <div class="step4-rate">
+                        <div class="step4-rate-title">
+                            <span class="upload-title-items">When Would You Like Your Campaign To Start?</span>
+                        </div>
+                        <div class="m-stars">
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="step5-show-panel">
+                        <div class="step5-show-title">
+                            <span>
+                                Showing Ad #1 of 10
+                            </span>
+                        </div>
+                        <div class="step5-show-refresh">
+                            <img src="app/img/content/refresh.png" alt="">
+                            <a href="">Refresh</a>
+                        </div>
+                        <div class="step-show-btn">
+                            <a href="">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            </a>
+                            <span></span>
+                            <a href="">
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="step5-facebook-wrapper">
+                        <img src="app/img/content/facebook-post.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="content-right-wrapper" id="scroll-1">
-                <h1>Lorem ipsum dolor.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dicta dolorem ea est facilis nostrum omnis perferendis quia sequi! Asperiores doloribus dolorum natus nesciunt officia pariatur perferendis quasi, voluptas?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda exercitationem in placeat quaerat, quod recusandae repellat reprehenderit sint, temporibus tenetur veritatis? Accusamus ad assumenda, corporis delectus eveniet non perspiciatis quidem rerum saepe sint suscipit veniam. Asperiores esse minus totam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores eius et placeat sed voluptate.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti et facilis magni nam nihil porro, quaerat! Delectus eos, est et excepturi impedit magni minus odio pariatur quis recusandae sapiente!</p>
+                <div class="step1-empty-space"></div>
+                <div class="step2-facebook-post">
+                    <div class="step2-panel-nav">
+                        <div class="step2-show-title">
+                            <span>
+                                Showing Ad #1 of 10
+                            </span>
+                        </div>
+                        <div class="step2-show-refresh">
+                            <img src="app/img/content/refresh.png" alt="">
+                            <a href="">Refresh</a>
+                        </div>
+                        <div class="step-show-btn">
+                            <a href="">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            </a>
+                            <span></span>
+                            <a href="">
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="step2-facebook-wrapper">
+                        <img src="app/img/content/facebook-post.png" alt="">
+                    </div>
+                </div>
+                <div class="step3-accordion-page">
+                    <div class="accordion-panel-nav">
+                        <a href="" class="m-btn btn-primary">
+                            <img src="app/img/content/refresh.png" alt="">
+                            Refresh
+                        </a>
+                    </div>
+                    <div class="m-accordion">
+                        <button class="accordion">
+                            <span class="accordion-addset">Total Target Audience Size</span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Layer_1-2.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Custom Audience</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 Custom Audiences</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/map.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Location</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Asset%2079.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/hourglass.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Age</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Age Groups</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/folder.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>IDB</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 IDB’s</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/document.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Placements</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>All Placements</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/archive.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Others</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>English</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="accordion">
+                            <span class="accordion-addset">Addset 1</span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Layer_1-2.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Custom Audience</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 Custom Audiences</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/map.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Location</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Asset%2079.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/hourglass.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Age</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Age Groups</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/folder.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>IDB</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 IDB’s</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/document.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Placements</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>All Placements</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/archive.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Others</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>English</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="accordion">
+                            <span class="accordion-addset">Addset 2</span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Layer_1-2.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Custom Audience</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 Custom Audiences</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/map.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Location</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Asset%2079.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/hourglass.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Age</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Age Groups</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/folder.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>IDB</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 IDB’s</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/document.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Placements</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>All Placements</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/archive.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Others</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>English</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="accordion">
+                            <span class="accordion-addset">Addset 3</span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Layer_1-2.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Custom Audience</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 Custom Audiences</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/map.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Location</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/Asset%2079.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Locations</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/hourglass.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Age</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>2 Age Groups</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/folder.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>IDB</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>4 IDB’s</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/document.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Placements</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>All Placements</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img-wrapper">
+                                        <img src="app/img/content/archive.png" alt="">
+                                    </div>
+                                    <div class="list-title-wrapper">
+                                        <span>Others</span>
+                                    </div>
+                                    <div class="list-result-wrapper">
+                                        <span>English</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="step4-list">
+                    <ul>
+                        <li>
+                            <img src="app/img/content/ad.png" alt="">
+                            <div class="step4-info">
+                                <span class="list-title">Number of Adsets To Create</span>
+                                <span class="list-count">10</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="app/img/content/money.png" alt="">
+                            <div class="step4-info">
+                                <span class="list-title">Est. Daily Spend Per Adset</span>
+                                <span class="list-count">$10</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="app/img/content/ticket.png" alt="">
+                            <div class="step4-info">
+                                <span class="list-title">Est. Total Spend Per Day</span>
+                                <span class="list-count">$100</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="step5-accordion-page">
+                    <button class="accordion">
+                        <span class="accordion-addset">Total Target Audience Size</span>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Layer_1-2.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Custom Audience</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 Custom Audiences</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/map.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Location</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Asset%2079.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/hourglass.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Age</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Age Groups</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/folder.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>IDB</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 IDB’s</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/document.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Placements</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>All Placements</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/archive.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Others</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>English</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">
+                        <span class="accordion-addset">Addset 1</span>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Layer_1-2.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Custom Audience</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 Custom Audiences</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/map.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Location</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Asset%2079.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/hourglass.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Age</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Age Groups</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/folder.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>IDB</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 IDB’s</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/document.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Placements</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>All Placements</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/archive.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Others</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>English</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">
+                        <span class="accordion-addset">Addset 2</span>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Layer_1-2.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Custom Audience</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 Custom Audiences</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/map.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Location</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Asset%2079.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/hourglass.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Age</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Age Groups</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/folder.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>IDB</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 IDB’s</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/document.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Placements</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>All Placements</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/archive.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Others</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>English</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">
+                        <span class="accordion-addset">Addset 3</span>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Layer_1-2.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Custom Audience</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 Custom Audiences</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/map.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Location</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Asset%2079.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/hourglass.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Age</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Age Groups</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/folder.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>IDB</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 IDB’s</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/document.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Placements</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>All Placements</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/archive.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Others</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>English</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">
+                        <span class="accordion-addset">Addset 4</span>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Layer_1-2.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Custom Audience</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 Custom Audiences</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/map.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Location</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Asset%2079.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/hourglass.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Age</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Age Groups</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/folder.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>IDB</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 IDB’s</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/document.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Placements</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>All Placements</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/archive.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Others</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>English</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">
+                        <span class="accordion-addset">Addset 5</span>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Layer_1-2.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Custom Audience</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 Custom Audiences</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/map.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Location</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/Asset%2079.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Locations</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/hourglass.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Age</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>2 Age Groups</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/folder.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>IDB</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>4 IDB’s</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/document.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Placements</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>All Placements</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-wrapper">
+                                    <img src="app/img/content/archive.png" alt="">
+                                </div>
+                                <div class="list-title-wrapper">
+                                    <span>Others</span>
+                                </div>
+                                <div class="list-result-wrapper">
+                                    <span>English</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </section>
 <footer>
     <div class="container">
@@ -86,7 +1195,12 @@
         </div>
     </div>
 </footer>
+
 <script src="app/js/main.js"></script>
 <script src="https://use.fontawesome.com/8a677bed15.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>-->
+<!--for datepicker-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>
