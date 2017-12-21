@@ -506,11 +506,15 @@ body {
   overflow-x: hidden;
   margin: 0; }
 
-#scroll-1::-webkit-scrollbar {
+#scroll-1::-webkit-scrollbar,
+#scroll-2::-webkit-scrollbar,
+#scroll-3::-webkit-scrollbar {
   width: 6px;
   background-color: #ffffff; }
 
-#scroll-1::-webkit-scrollbar-thumb {
+#scroll-1::-webkit-scrollbar-thumb,
+#scroll-2::-webkit-scrollbar-thumb,
+#scroll-3::-webkit-scrollbar-thumb {
   background-color: #f2f2f2;
   border-radius: 3px; }
 
@@ -737,11 +741,6 @@ section.content-wrapper {
     overflow-x: hidden;
     overflow-y: scroll;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
-    section.content-wrapper .content-left-wrapper .lp-line {
-      width: 100%;
-      height: 1px;
-      background-color: #e3e3e3;
-      margin-bottom: 50px; }
     section.content-wrapper .content-left-wrapper .lp-new-campaign .campaign-title {
       width: 100%;
       margin-bottom: 35px; }
@@ -754,7 +753,6 @@ section.content-wrapper {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 60px;
       padding: 5px; }
       section.content-wrapper .content-left-wrapper .lp-new-campaign .campaign-btn .campaign-link {
         width: 100%;
@@ -1138,3 +1136,24 @@ footer {
               justify-content: space-around; } }
           footer .footer-wrapper .footer-social .footer-social-wrapper ul li a img {
             width: 30px; }
+
+.questions > .question {
+  position: relative;
+  opacity: .2; }
+  .questions > .question.focus {
+    cursor: default;
+    opacity: 1; }
+  .questions > .question .question-inner {
+    padding: 60px 0;
+    border-bottom: 1px solid red; }
+
+#is-step-2,
+#is-step-3,
+#is-step-4,
+#is-step-5 {
+  display: none; }
+  #is-step-2.active,
+  #is-step-3.active,
+  #is-step-4.active,
+  #is-step-5.active {
+    display: block; }
