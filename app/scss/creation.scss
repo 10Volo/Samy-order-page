@@ -319,7 +319,7 @@ section.content-wrapper {
   margin-top: 5px;
   margin-bottom: 70px;
   .content-left-wrapper {
-    height: 62vh;
+    height: 72vh;
     background-color: #ffffff;
     padding-top: 190px;
     padding-left: 50px;
@@ -744,7 +744,7 @@ section.content-wrapper {
   }
   .content-right-wrapper {
     background-color: #ffffff;
-    height: 62vh;
+    height: 72vh;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -752,10 +752,6 @@ section.content-wrapper {
     overflow-x: hidden;
     overflow-y: scroll;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-    .step1-empty-space {
-      width: 100%;
-      height: 62vh;
-    }
     .step2-facebook-post {
       display: flex;
       flex-direction: column;
