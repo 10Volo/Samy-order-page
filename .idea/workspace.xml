@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa4793f-e231-4ed6-9a33-8e848def2d00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scss/_m-btn.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scss/_m-input.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scss/_m-rating.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scss/_m-select.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scss/modules-creation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules-creation.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 2 with library.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 2 with library.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 3 with Statement.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 3 with Statement.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 3.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 4 with Rate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 4 with Rate.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 4.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Creation Step 5.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Published Page.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Published Page.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Publishing Page.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Publishing Page.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Reporting 2 Copy 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Reporting 2 Copy 2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Reporting 2 Copy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Reporting 2 Copy.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Welcome Page Copy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Welcome Page Copy.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Welcome Page.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/Welcome Page.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/all-page-creation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/when button is chosen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pixel-prf/when button is chosen.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/content/refresh.png" afterPath="$PROJECT_DIR$/app/img/content/refresh.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/creation.css" afterPath="$PROJECT_DIR$/app/css/creation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/main.js" afterPath="$PROJECT_DIR$/app/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/creation.scss" afterPath="$PROJECT_DIR$/app/scss/creation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creation.html" afterPath="$PROJECT_DIR$/creation.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,8 +21,8 @@
           <file leaf-file-name="creation.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/creation.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="1001" column="63" lean-forward="false" selection-start-line="1001" selection-start-column="63" selection-end-line="1001" selection-end-column="63" />
+                <state relative-caret-position="60">
+                  <caret line="1014" column="38" lean-forward="true" selection-start-line="1014" selection-start-column="38" selection-end-line="1014" selection-end-column="38" />
                   <folding>
                     <element signature="e#11881#11887#1" expanded="true" />
                     <element signature="e#11942#11948#1" expanded="true" />
@@ -80,7 +37,7 @@
           <file leaf-file-name="modules-creation.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/modules-creation.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1927">
+                <state relative-caret-position="4035">
                   <caret line="269" column="14" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="269" selection-end-column="14" />
                   <folding>
                     <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -108,7 +65,7 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
+                <state relative-caret-position="465">
                   <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
                   <folding />
                 </state>
@@ -122,7 +79,7 @@
           <file leaf-file-name="creation.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/creation.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="273">
+                <state relative-caret-position="15">
                   <caret line="761" column="27" lean-forward="false" selection-start-line="761" selection-start-column="27" selection-end-line="761" selection-end-column="27" />
                   <folding />
                 </state>
@@ -132,7 +89,7 @@
           <file leaf-file-name="modules-creation.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/modules-creation.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1016">
+                <state relative-caret-position="4545">
                   <caret line="303" column="1" lean-forward="false" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
                   <folding />
                 </state>
@@ -142,7 +99,7 @@
           <file leaf-file-name="_m-input.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/_m-input.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="178">
+                <state relative-caret-position="300">
                   <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="22" selection-end-column="17" />
                   <folding />
                 </state>
@@ -162,7 +119,7 @@
           <file leaf-file-name="_m-btn.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/_m-btn.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-49">
+                <state relative-caret-position="255">
                   <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="10" />
                   <folding />
                 </state>
@@ -265,7 +222,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="-4" />
     <option name="width" value="1366" />
     <option name="height" value="719" />
@@ -351,12 +308,15 @@
       <workItem from="1512837380628" duration="16669000" />
       <workItem from="1513083607463" duration="24024000" />
       <workItem from="1513194275936" duration="3906000" />
-      <workItem from="1513423321337" duration="30973000" />
+      <workItem from="1513423321337" duration="31638000" />
+      <workItem from="1513873768793" duration="311000" />
+      <workItem from="1513880752170" duration="613000" />
+      <workItem from="1513938353525" duration="680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142119000" />
+    <option name="totallyTimeSpent" value="144388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,17 +328,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="719" extended-state="7" />
+    <frame x="0" y="-4" width="1368" height="727" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14445272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44067797" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43898305" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -386,6 +345,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -400,6 +360,158 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/creation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/modules-creation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4545">
+          <caret line="303" column="1" lean-forward="false" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-select.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-btn.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-rating.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15015">
+          <caret line="1001" column="63" lean-forward="false" selection-start-line="1001" selection-start-column="63" selection-end-line="1001" selection-end-column="63" />
+          <folding>
+            <element signature="e#11881#11887#1" expanded="true" />
+            <element signature="e#11942#11948#1" expanded="true" />
+            <element signature="e#12003#12009#1" expanded="true" />
+            <element signature="e#12064#12070#1" expanded="true" />
+            <element signature="e#12125#12131#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules-creation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4035">
+          <caret line="269" column="14" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="269" selection-end-column="14" />
+          <folding>
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#14812#14818#1" expanded="true" />
+            <element signature="e#14857#14863#1" expanded="true" />
+            <element signature="e#14902#14908#1" expanded="true" />
+            <element signature="e#14947#14953#1" expanded="true" />
+            <element signature="e#14992#14998#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/creation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/modules-creation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4545">
+          <caret line="303" column="1" lean-forward="false" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-select.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-btn.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_m-rating.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/creation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -684,13 +796,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="72" column="1" lean-forward="false" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="465">
           <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding />
         </state>
@@ -706,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_m-btn.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
+        <state relative-caret-position="255">
           <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="10" />
           <folding />
         </state>
@@ -714,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_m-input.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="300">
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="22" selection-end-column="17" />
           <folding />
         </state>
@@ -722,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/modules-creation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1016">
+        <state relative-caret-position="4545">
           <caret line="303" column="1" lean-forward="false" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
           <folding />
         </state>
@@ -730,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/creation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="15">
           <caret line="761" column="27" lean-forward="false" selection-start-line="761" selection-start-column="27" selection-end-line="761" selection-end-column="27" />
           <folding />
         </state>
@@ -738,7 +849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules-creation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1927">
+        <state relative-caret-position="4035">
           <caret line="269" column="14" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="269" selection-end-column="14" />
           <folding>
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -764,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/creation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="1001" column="63" lean-forward="false" selection-start-line="1001" selection-start-column="63" selection-end-line="1001" selection-end-column="63" />
+        <state relative-caret-position="60">
+          <caret line="1014" column="38" lean-forward="true" selection-start-line="1014" selection-start-column="38" selection-end-line="1014" selection-end-column="38" />
           <folding>
             <element signature="e#11881#11887#1" expanded="true" />
             <element signature="e#11942#11948#1" expanded="true" />
