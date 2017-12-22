@@ -152,3 +152,12 @@ function setRating(){
         }
     });
 }
+// Show/hide prelouder
+function showPreLouderImg() {
+    var x = document.getElementById("show-louder");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
