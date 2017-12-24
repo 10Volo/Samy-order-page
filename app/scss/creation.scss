@@ -411,7 +411,7 @@ section.content-wrapper {
                 }
               }
               .uploader-file {
-                display: none;
+                //display: none;
                 .upload-liberty-title {
                   width: 100%;
                   text-align: center;
@@ -953,17 +953,22 @@ footer {
 .questions > .question {
   position: relative;
   opacity: .2;
-  .line-100 {
-    background-color: red;
-    opacity: 1 !important;
+  display: none;
+  //.line-100 {
+  //  background-color: red;
+  //  opacity: 1 !important;
+  //}
+  &.is-block {
+    display: block;
   }
+
   &.focus {
     cursor: default;
     opacity: 1;
-    .line-100 {
-      background-color: blue;
-      opacity: 1 !important;
-    }
+    //.line-100 {
+    //  background-color: blue;
+    //  opacity: 1 !important;
+    //}
   }
 
   .question-inner {

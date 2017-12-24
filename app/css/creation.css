@@ -799,91 +799,89 @@ section.content-wrapper {
           width: 50%;
           display: flex;
           justify-content: center; }
-      section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file {
-        display: none; }
-        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-liberty-title {
-          width: 100%;
-          text-align: center;
-          border-top: 1px solid #979797;
-          margin: 30px 0 25px;
+      section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-liberty-title {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #979797;
+        margin: 30px 0 25px;
+        padding-top: 25px; }
+        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-liberty-title span {
+          color: #464c56;
+          font-family: Raleway;
+          font-size: 20px;
+          font-weight: 500;
           padding-top: 25px; }
-          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-liberty-title span {
-            color: #464c56;
-            font-family: Raleway;
-            font-size: 20px;
-            font-weight: 500;
-            padding-top: 25px; }
-        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 30px; }
-          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav {
-            width: 477px;
-            height: 65px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-            border-radius: 30px; }
-            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper {
-              width: 50%;
-              height: 40px;
-              display: flex;
-              justify-content: center; }
-              section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper:first-child {
-                border-right: 1px solid #dcdcdc; }
-              section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper button {
-                background-color: #ffffff;
-                border: none; }
-                section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper button span {
-                  color: #0c508e;
-                  font-size: 17px; }
-                  section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper button span img {
-                    margin-right: 10px; }
-              section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper label {
-                margin: 0; }
-                section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper label span {
-                  color: #0c508e;
-                  font-size: 17px; }
-                  section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper label span img {
-                    margin-right: 10px; }
-              section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper input {
-                display: none;
-                width: 0;
-                height: 0;
-                visibility: hidden;
-                opacity: 0; }
-        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper {
-          width: 100%;
+      section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px; }
+        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav {
+          width: 477px;
+          height: 65px;
           display: flex;
           justify-content: center;
-          margin-bottom: 15px; }
-          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper .upload-preview {
-            width: 638px;
-            height: 331px;
+          align-items: center;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+          border-radius: 30px; }
+          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper {
+            width: 50%;
+            height: 40px;
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            overflow-y: scroll;
-            box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2); }
-            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper .upload-preview .upload-img-wrapper {
-              margin: 10px; }
-              section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper .upload-preview .upload-img-wrapper img {
-                width: 275px; }
-          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper #scroll-1::-webkit-scrollbar {
-            width: 6px;
-            background-color: #ffffff; }
-          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper #scroll-1::-webkit-scrollbar-thumb {
-            background-color: #f2f2f2;
-            border-radius: 3px; }
-        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-ok {
-          width: 100%;
+            justify-content: center; }
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper:first-child {
+              border-right: 1px solid #dcdcdc; }
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper button {
+              background-color: #ffffff;
+              border: none; }
+              section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper button span {
+                color: #0c508e;
+                font-size: 17px; }
+                section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper button span img {
+                  margin-right: 10px; }
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper label {
+              margin: 0; }
+              section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper label span {
+                color: #0c508e;
+                font-size: 17px; }
+                section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper label span img {
+                  margin-right: 10px; }
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper input {
+              display: none;
+              width: 0;
+              height: 0;
+              visibility: hidden;
+              opacity: 0; }
+      section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px; }
+        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper .upload-preview {
+          width: 638px;
+          height: 331px;
           display: flex;
-          justify-content: center; }
-          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-ok .link-ok-wrapper {
-            width: 310px;
-            height: 66px; }
+          justify-content: space-around;
+          flex-wrap: wrap;
+          overflow-y: scroll;
+          box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2); }
+          section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper .upload-preview .upload-img-wrapper {
+            margin: 10px; }
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper .upload-preview .upload-img-wrapper img {
+              width: 275px; }
+        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper #scroll-1::-webkit-scrollbar {
+          width: 6px;
+          background-color: #ffffff; }
+        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-preview-wrapper #scroll-1::-webkit-scrollbar-thumb {
+          background-color: #f2f2f2;
+          border-radius: 3px; }
+      section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-ok {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-ok .link-ok-wrapper {
+          width: 310px;
+          height: 66px; }
     section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question5 .question-inner {
       padding: 60px 0; }
       section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question5 .question-inner .m-input-wrapper {
@@ -1175,16 +1173,13 @@ footer {
 
 .questions > .question {
   position: relative;
-  opacity: .2; }
-  .questions > .question .line-100 {
-    background-color: red;
-    opacity: 1 !important; }
+  opacity: .2;
+  display: none; }
+  .questions > .question.is-block {
+    display: block; }
   .questions > .question.focus {
     cursor: default;
     opacity: 1; }
-    .questions > .question.focus .line-100 {
-      background-color: blue;
-      opacity: 1 !important; }
 
 #is-step-2,
 #is-step-3,

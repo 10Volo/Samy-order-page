@@ -40,39 +40,51 @@ $(function () { // wait for document ready
 		controller4 = runController(4),
 		controller5 = runController(5);
 
-	// var $questions = $(".questions"),
-	// 	$windowScroll = $('#scroll-1');
+	checkBlock();
 
 	// SCROLL
-	$('.questions .question').each(function () {
-		var curr = $(this);
+	function checkBlock() {
+		$('.questions .question.is-block').each(function () {
+			var curr = $(this);
 
-		new ScrollMagic.Scene({triggerElement: '#' + curr.attr('id'), duration: curr.height()})
-			.on("enter", function () {
-				// trigger animation by changing inline style.
-				TweenMax.to('#' + curr.attr('id'), 1, {className:"+=focus"});
-			})
-			.on("leave", function () {
-				// reset style
-				TweenMax.to('#' + curr.attr('id'), 1, {className:"-=focus"});
-			})
-			.addIndicators()
-			.addTo(controller)
+			new ScrollMagic.Scene({triggerElement: '#' + curr.attr('id'), duration: curr.height()})
+				.on("enter", function () {
+					// trigger animation by changing inline style.
+					TweenMax.to('#' + curr.attr('id'), 1, {className:"+=focus"});
+				})
+				.on("leave", function () {
+					// reset style
+					TweenMax.to('#' + curr.attr('id'), 1, {className:"-=focus"});
+				})
+				// .addIndicators()
+				.addTo(controller)
+		});
+	}
+
+	$(".on-enter").on( "click", function(event) {
+		event.preventDefault();
+
+		var strId = $(event.target).closest('.question').attr('id'),
+			curr,
+			lastNum = strId.length === 9 ? strId.substr(strId.length - 1) : strId.substr(strId.length - 2);
+
+		var findElementNext = $('.questions').find('#question' + ++lastNum);
+
+		if(findElementNext) {
+			findElementNext.addClass('is-block');
+			new ScrollMagic.Scene({triggerElement: '#' + findElementNext.attr('id'), duration: findElementNext.height()})
+				.on("enter", function () {
+					// trigger animation by changing inline style.
+					TweenMax.to('#' + findElementNext.attr('id'), 1, {className:"+=focus"});
+				})
+				.on("leave", function () {
+					// reset style
+					TweenMax.to('#' + findElementNext.attr('id'), 1, {className:"-=focus"});
+				})
+				// .addIndicators()
+				.addTo(controller)
+		}
 	});
-
-	// controller.scrollTo(function (newpos) {
-	// 	TweenMax.to($windowScroll, 1, {scrollTo: {y: newpos}});
-	// });
-
-	// CLICK + SCROLL
-	// $questions.on("click", ".question", function(){
-	// 	var $this = $(this),
-	// 		topY = $this.offset().top;
-	//
-	// 	controller.scrollTo(topY);
-	//
-	// 	return false;
-	// });
 
 	// build scenes
 	var scene1 = new ScrollMagic.Scene({triggerElement: "#step1"})
@@ -151,13 +163,4 @@ function setRating(){
             // console.log('removed rated on', index );
         }
     });
-}
-// Show/hide prelouder
-function showPreLouderImg() {
-    var x = document.getElementById("show-louder");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
 }
