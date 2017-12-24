@@ -35,12 +35,16 @@ $(function () { // wait for document ready
 	// init controller
 	var controller = new ScrollMagic.Controller({container: "#scroll-1"}),
 		controller1 = runController(1),
-		controller2 = runController(2),
-		controller3 = runController(3),
-		controller4 = runController(4),
-		controller5 = runController(5);
+		controller2, scene2,
+		controller3, scene3,
+		controller4, scene4,
+		controller5, scene5;
+
+	var scene1 = new ScrollMagic.Scene({triggerElement: "#step1"})
+		.addTo(controller1);
 
 	checkBlock();
+	runScene(1);
 
 	// SCROLL
 	function checkBlock() {
@@ -65,10 +69,10 @@ $(function () { // wait for document ready
 		event.preventDefault();
 
 		var strId = $(event.target).closest('.question').attr('id'),
-			curr,
-			lastNum = strId.length === 9 ? strId.substr(strId.length - 1) : strId.substr(strId.length - 2);
+			lastNum = parseInt(strId.length === 9 ? strId.substr(strId.length - 1) : strId.substr(strId.length - 2)),
+			nextNum = parseInt(lastNum) + 1;
 
-		var findElementNext = $('.questions').find('#question' + ++lastNum);
+		var findElementNext = $('.questions').find('#question' + nextNum);
 
 		if(findElementNext) {
 			findElementNext.addClass('is-block');
@@ -84,46 +88,72 @@ $(function () { // wait for document ready
 				// .addIndicators()
 				.addTo(controller)
 		}
+
+		switch (lastNum) {
+			case 1:
+			case 2: {
+				break;
+			}
+
+			case 3:
+			case 4:
+			case 5: {
+				runScene(2);
+
+				break;
+			}
+
+			case 6:
+			case 7:
+			case 8:
+			case 9: {
+				removeScene(2);
+				runScene(3);
+
+				break;
+			}
+
+			case 10:
+			case 11:
+			case 12: {
+				removeScene(3);
+				runScene(4);
+
+				break;
+			}
+
+			case 13: {
+				removeScene(4);
+				runScene(5);
+
+				break;
+			}
+		}
 	});
-
-	// build scenes
-	var scene1 = new ScrollMagic.Scene({triggerElement: "#step1"})
-		.addTo(controller1);
-	var scene2 = new ScrollMagic.Scene({triggerElement: "#step2"})
-		.addTo(controller2);
-	var scene3 = new ScrollMagic.Scene({triggerElement: "#step3"})
-		.addTo(controller3);
-	var scene4 = new ScrollMagic.Scene({triggerElement: "#step4"})
-		.addTo(controller4);
-	var scene5 = new ScrollMagic.Scene({triggerElement: "#step5"})
-		.addTo(controller5);
-
-	runScene(scene1, $('#step-1'));
-	runScene(scene2, $('#step-2'), $('#is-step-2'));
-	runScene(scene3, $('#step-3'), $('#is-step-3'));
-	runScene(scene4, $('#step-4'), $('#is-step-4'));
-	runScene(scene5, $('#step-5'), $('#is-step-5'));
 
 	function runController(num) {
 		return new ScrollMagic.Controller({container: "#scroll-1", globalSceneOptions: {duration: $('#step' + num).height()}});
 	}
 
-	function runScene(scene, nav, showBlock) {
-		scene.on('enter', function(){
+	function runScene(step) {
+		var nav = $('#step-' + step);
+		var showBlock = $('.content-right-wrapper').find('#is-step-' + step);
+
+		if(nav) {
 			nav.addClass('active');
+		}
 
-			if(showBlock) {
-				showBlock.addClass('active');
-			}
-		});
+		if(showBlock) {
+			showBlock.addClass('active');
+		}
+	}
 
-		scene.on('leave', function(){
-			nav.removeClass('active');
+	function removeScene(step) {
+		var showBlock = $('.content-right-wrapper').find('#is-step-' + step);
 
-			if(showBlock) {
-				showBlock.removeClass('active');
-			}
-		});
+		if(showBlock) {
+			showBlock.removeClass('active');
+		}
 	}
 });
 
