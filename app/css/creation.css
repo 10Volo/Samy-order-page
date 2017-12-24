@@ -741,6 +741,15 @@ section.steps {
         content: '';
         background-image: url("../../app/img/content/pencil.png");
         background-repeat: no-repeat; }
+      section.steps ul li a:not(.active).success:before {
+        position: absolute;
+        width: 28px;
+        height: 37px;
+        top: 0;
+        left: -30px;
+        content: '';
+        background-image: url("../../app/img/content/play.png");
+        background-repeat: no-repeat; }
 
 section.content-wrapper {
   position: relative;

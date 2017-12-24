@@ -107,7 +107,6 @@ $(function () { // wait for document ready
 			case 7:
 			case 8:
 			case 9: {
-				removeScene(2);
 				runScene(3);
 
 				break;
@@ -116,14 +115,12 @@ $(function () { // wait for document ready
 			case 10:
 			case 11:
 			case 12: {
-				removeScene(3);
 				runScene(4);
 
 				break;
 			}
 
 			case 13: {
-				removeScene(4);
 				runScene(5);
 
 				break;
@@ -139,20 +136,28 @@ $(function () { // wait for document ready
 		var nav = $('#step-' + step);
 		var showBlock = $('.content-right-wrapper').find('#is-step-' + step);
 
+		$('.content-right-wrapper .step').each(function () {
+			var curr = $(this);
+			curr.removeClass('active');
+		});
+
+		$('ul .link-step').each(function () {
+			var curr = $(this),
+				attrId = curr.attr('id');
+			curr.removeClass('active');
+
+			if(attrId.substr(attrId.length - 1) >= step) {
+				curr.removeClass('success');
+			}
+		});
+
 		if(nav) {
 			nav.addClass('active');
+			nav.addClass('success');
 		}
 
 		if(showBlock) {
 			showBlock.addClass('active');
-		}
-	}
-
-	function removeScene(step) {
-		var showBlock = $('.content-right-wrapper').find('#is-step-' + step);
-
-		if(showBlock) {
-			showBlock.removeClass('active');
 		}
 	}
 });
