@@ -28,6 +28,8 @@
 //$color-main: #506a85;
 //$font-main: 'Raleway', sans-serif;
 $color-main: #B6B6B6;
+$question-padding: 50px 0;
+$title-mar-botton: 30px;
 
 * {
   box-sizing: border-box;
@@ -89,8 +91,8 @@ header {
   align-items: center;
   background-color: #ffffff;
   box-shadow: 0px 3px 5px #bbb;
-  margin-bottom: 15px;
-  padding: 25px 0;
+  //margin-bottom: 15px;
+  padding: 20px 0;
   @media (max-width: 405px) {
     flex-direction: column;
     align-items: baseline;
@@ -143,7 +145,7 @@ header {
           display: flex;
           align-items: center;
           width: 165px;
-          height: 40px;
+          height: 35px;
           border-radius: 15px;
           box-shadow: 0px 1px 5px #bbbbbb;
           margin: 0 10px;
@@ -158,7 +160,7 @@ header {
             box-shadow: none;
           }
           a {
-            font-size: 20px;
+            font-size: 18px;
             @media (max-width: 1230px) {
               margin-right: 10px;
             }
@@ -178,6 +180,8 @@ header {
               border-bottom: 1px solid;
             }
             img {
+              width: auto;
+              height: 25px;
               margin: 0 10px;
               @media (max-width: 1045px) {
                 margin-top: 5px;
@@ -250,8 +254,9 @@ header {
         align-items: baseline;
       }
       span {
-        margin: 0 20px;
         color: #0C508E;
+        font-size: 16px;
+        margin: 5px 20px;
         @media (max-width: 1045px) {
           font-size: 16px;
         }
@@ -279,12 +284,12 @@ section.steps {
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   box-shadow: 0px 3px 5px #bbb;
-  margin-top: 90px;
+  margin-top: 80px;
   ul {
     display: flex;
     justify-content: space-between;
@@ -295,16 +300,17 @@ section.steps {
         display: block;
         color: #0c508e;
         font-family: 'Gotham-Book';
-        font-size: 25px;
+        font-size: 20px;
         &.active {
           &:before {
             position: absolute;
             width: 28px;
             height: 37px;
-            top: 0;
+            top: 2px;
             left: -30px;
             content: '';
             background-image: url("../../app/img/content/pencil.png");
+            background-size: 20px 25px;
             background-repeat: no-repeat;
           }
         }
@@ -312,12 +318,12 @@ section.steps {
         &:not(.active).success {
           &:before {
             position: absolute;
-            width: 28px;
+            width: 40px;
             height: 37px;
             top: 0;
-            left: -30px;
+            left: -50px;
             content: '';
-            background-image: url("../../app/img/content/play.png");
+            background-image: url("../../app/img/content/checked.png");
             background-repeat: no-repeat;
           }
         }
@@ -328,13 +334,12 @@ section.steps {
 
 section.content-wrapper {
   position: relative;
-  top: 100px;
-  margin-top: 5px;
-  margin-bottom: 70px;
+  top: 125px;
+  margin-bottom: 60px;
   .content-left-wrapper {
-    height: 72vh;
+    height: 70vh;
     background-color: #ffffff;
-    padding-top: 190px;
+    padding-top: 90px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
@@ -346,10 +351,10 @@ section.content-wrapper {
         ul.questions {
           li#question1 {
             .question-inner {
-              padding: 55px 0;
+              padding: $question-padding;
               .campaign-title {
                 width: 100%;
-                margin-bottom: 35px;
+                margin-bottom: $title-mar-botton;
                 span {
                   color: #0c508e;
                   font-family: Raleway;
@@ -372,9 +377,9 @@ section.content-wrapper {
           }
           li#question2 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .lp-ad-title {
-                margin-bottom: 50px;
+                margin-bottom: $title-mar-botton;
                 span {
                   color: #0c508e;
                   font-family: Raleway;
@@ -391,7 +396,7 @@ section.content-wrapper {
         ul.questions {
           li#question3 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .lp-ad-title {
                 span {
 
@@ -407,7 +412,7 @@ section.content-wrapper {
           }
           li#question4 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .upload-title {
 
               }
@@ -535,7 +540,7 @@ section.content-wrapper {
           }
           li#question5 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .lp-ad-title {
                 span {}
               }
@@ -551,7 +556,7 @@ section.content-wrapper {
         ul.questions {
           li#question6 {
             .question-inner {
-              padding-top: 60px;
+              padding: $question-padding;
               .upload-choose-conversion {
                 display: flex;
                 flex-direction: column;
@@ -565,14 +570,14 @@ section.content-wrapper {
                   font-weight: 500;
                 }
                 .upload-choose-conversion-btn {
-                  margin: 45px 0 60px;
+                  margin: 45px 0 0;
                 }
               }
             }
           }
           li#question7 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .upload-message-audience {
                 display: flex;
                 img {
@@ -596,22 +601,25 @@ section.content-wrapper {
           }
           li#question8 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .upload-custom-audience {
+                .upload-audience-title-wrapper {
+                  margin-bottom: 30px;
+                }
                 .upload-custom-audience-btn {
                   display: flex;
-                  justify-content: space-around;
-                  margin-top: 40px;
+                  justify-content: space-between;
+                  margin: 0 10px;
                 }
               }
             }
           }
           li#question9 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .upload-choose-audience {
                 .upload-choose-audience-btn {
-                  margin-top: 40px;
+                  margin-top: $title-mar-botton;
                 }
               }
             }
@@ -622,10 +630,10 @@ section.content-wrapper {
         ul.questions {
           li#question10 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .step4-spend-money {
                 .step4-title {
-                  margin-bottom: 60px;
+                  margin-bottom: $title-mar-botton;
                 }
                 .m-input-wrapper {
                 }
@@ -634,10 +642,10 @@ section.content-wrapper {
           }
           li#question11 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .step4-when-start {
                 .step4-title {
-                  margin-bottom: 60px;
+                  margin-bottom: $title-mar-botton;
                 }
                 .m-input-img-wrapper {
                 }
@@ -646,7 +654,7 @@ section.content-wrapper {
           }
           li#question12 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .upload-message-audience {
                 display: flex;
                 img {
@@ -671,7 +679,7 @@ section.content-wrapper {
           }
           li#question13 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .step4-rate {
               }
             }
@@ -682,7 +690,7 @@ section.content-wrapper {
         ul.questions {
           li#question14 {
             .question-inner {
-              padding: 60px 0;
+              padding: $question-padding;
               .step5-show-panel {
                 width: 100%;
                 display: flex;
@@ -758,8 +766,8 @@ section.content-wrapper {
   }
   .content-right-wrapper {
     background-color: #ffffff;
-    height: 72vh;
-    padding-top: 50px;
+    height: 70vh;
+    padding-top: 30px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
@@ -783,18 +791,21 @@ section.content-wrapper {
           span {
             color: #6b6b6b;
             font-family: Raleway;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 600;
           }
         }
         .step2-show-refresh {
-          width: 167px;
-          height: 56px;
+          width: 130px;
+          height: 40px;
           display: flex;
           justify-content: center;
           align-items: center;
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
           border-radius: 100px;
+          img {
+            width: 20px;
+          }
           a {
             color: #0c508e;
             font-size: 17px;
@@ -805,14 +816,14 @@ section.content-wrapper {
           }
         }
         .step-show-btn {
-          width: 167px;
-          height: 56px;
+          width: 130px;
+          height: 40px;
           display: flex;
           justify-content: space-between;
           align-items: center;
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
           border-radius: 100px;
-          padding: 0 40px;
+          padding: 0 30px;
           a {
             color: #0c508e;
             font-size: 17px;
@@ -820,9 +831,13 @@ section.content-wrapper {
             &:hover {
               color: #0c508e;
             }
+            &:active {
+              box-shadow: 0 2px 0 #006599;
+              transform: translateY(3px);
+            }
             i {
               color: #6c6c6c;
-              font-size: 30px;
+              font-size: 22px;
             }
           }
           span {
@@ -836,6 +851,10 @@ section.content-wrapper {
         width: 100%;
         display: flex;
         justify-content: center;
+        img {
+          width: 450px;
+          height: 480px;
+        }
       }
     }
     .step3-accordion-page {
@@ -855,10 +874,10 @@ section.content-wrapper {
         li {
           display: flex;
           border-top: 1px solid #ebebeb;
-          padding: 60px 20px;
+          padding: 30px 20px;
           img {
-            width: 83px;
-            height: auto;
+            width: 60px;
+            height: 70px;
           }
           .step4-info {
             display: flex;
@@ -867,15 +886,15 @@ section.content-wrapper {
             span.list-title {
               color: #0c508e;
               font-family: Raleway;
-              font-size: 24px;
+              font-size: 20px;
               font-weight: 600;
               line-height: 30px;
-              margin-bottom: 20px;
+              margin-bottom: 10px;
             }
             span.list-count {
               color: #c9321f;
               font-family: 'Gotham-Bold';
-              font-size: 30px;
+              font-size: 24px;
               font-weight: 400;
               line-height: 30px;
             }
@@ -897,7 +916,7 @@ footer {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0px -3px 5px 0px #bbb;
-  padding: 20px 0;
+  padding: 15px 0;
   @media (max-width: 767px) {
     padding: 10px 0;
   }
@@ -924,6 +943,7 @@ footer {
         li {
           a {
             color: $color-main;
+            font-size: 18px;
             @media (max-width: 767px) {
               font-size: 16px;
             }
@@ -953,7 +973,7 @@ footer {
             a {
 
               img {
-                width: 30px;
+                width: 25px;
               }
             }
           }
@@ -1000,3 +1020,4 @@ footer {
 		display: block;
 	}
 }
+

@@ -25,8 +25,7 @@
     <script src="https://use.fontawesome.com/8a677bed15.js"></script>
 
 
-    <!--<script type="text/javascript" src="../../js/lib/jquery.min.js"></script>-->
-    <!--<script type="text/javascript" src="../../js/lib/highlight.pack.js"></script>-->
+
 
     <script type="text/javascript" src="app/js/TweenMax.min.js"></script>
     <script type="text/javascript" src="app/js/ScrollToPlugin.min.js"></script>
@@ -86,278 +85,307 @@
         <div class="col-sm-6">
             <div class="content-left-wrapper" id="scroll-1">
                 <div class="lp-new-campaign">
-                    <div id="step1">
-                        <ul class="questions">
-                            <li class="question is-block" id="question1">
-                                <div class="question-inner">
-                                    <div class="campaign-title upload-title-items">
-                                        <span>Would You Like To Load or Create a New Campaign?</span>
-                                    </div>
-                                    <div class="campaign-btn">
-                                        <div class="campaign-link">
-                                            <a class="m-btn active" href="">Create New Campaign</a>
+                    <form method="post" id="k">
+                        <div id="step1">
+                            <ul class="questions">
+                                <li class="question is-block" id="question1">
+                                    <div class="line-100"></div>
+                                    <div class="question-inner">
+                                        <div class="campaign-title upload-title-items">
+                                            <span>Would You Like To Load or Create a New Campaign?</span>
                                         </div>
-                                        <div class="campaign-link">
-                                            <a class="m-btn" href="">Load a Saved Campaign</a>
+                                        <div class="campaign-btn middle">
+                                            <div class="campaign-link">
+                                                <label>
+                                                    <input type="radio" name="radio"/>
+                                                    <div class="box">
+                                                        <span class="m-btn">Create New Campaign</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="campaign-link">
+                                                <label>
+                                                    <input type="radio" name="radio"/>
+                                                    <div class="box">
+                                                        <span class="m-btn">Load a Saved Campaign</span>
+                                                    </div>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="question is-block" id="question2">
-                                <div class="question-inner">
-                                    <div class="lp-ad-title upload-title-items">
+                                </li>
+                                <li class="question is-block" id="question2">
+                                    <div class="line-100"></div>
+                                    <div class="question-inner">
+                                        <div class="lp-ad-title upload-title-items">
                                         <span>
                                          Name Your Campaign
                                         </span>
-                                    </div>
-                                    <div class="m-input-wrapper">
-                                        <input class="m-input on-enter" type="text">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="step2">
-                        <ul class="questions">
-                            <li class="question" id="question3">
-                                <div class="question-inner">
-                                    <div class="lp-ad-title upload-title-items">
-                                        <span>
-                                            Where Do You Want The Facebook Traffic To Go?
-                                        </span>
-                                    </div>
-                                    <div class="m-input-wrapper">
-                                        <input class="m-input on-enter" value="http://">
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question4">
-                                <div class="question-inner">
-                                    <div class="upload-title upload-title-items">
-                                        <span>Select/Upload Your Media</span>
-                                    </div>
-                                    <div class="upload-image-video">
-                                        <div class="upload-content-wrapper">
-                                            <div class="switch-color">
-                                                <a href="#" class="m-btn btn-primary on-enter">
-                                                    <img src="app/img/content/img.png" alt="">
-                                                    Image Library
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="upload-content-wrapper">
-                                            <div class="switch-color">
-                                                <a href="#" class="m-btn btn-primary on-enter">
-                                                    <img src="app/img/content/play.png" alt="">
-                                                    Video Library
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="uploader-file" id="show-louder">
-                                        <div class="upload-liberty-title upload-title-items">
-                                            <span>Choose From Library</span>
-                                        </div>
-                                        <div class="upload-btn">
-                                            <div class="upload-nav">
-                                                <div class="upload-btn-wrapper">
-                                                    <button><span><img src="app/img/content/refresh.png" alt="">Refresh</span></button>
-                                                </div>
-                                                <div class="upload-btn-wrapper">
-                                                    <label for="files">
-                                                        <span><img src="app/img/content/cloud.png" alt="">Upload Image</span>
-                                                    </label>
-                                                    <input type="file" id="files" multiple/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="upload-preview-wrapper">
-                                            <div class="upload-preview" id="scroll-3">
-                                                <div class="upload-img-wrapper">
-                                                    <img src="app/img/content/upload-img-1.png" alt="">
-                                                </div>
-                                                <div class="upload-img-wrapper">
-                                                    <img src="app/img/content/upload-img-2.png" alt="">
-                                                </div>
-                                                <div class="upload-img-wrapper">
-                                                    <img src="app/img/content/upload-img-3.png" alt="">
-                                                </div>
-                                                <div class="upload-img-wrapper">
-                                                    <img src="app/img/content/upload-img-4.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="upload-ok">
-                                            <div class="link-ok-wrapper">
-                                                <a href="" class="m-btn btn-secondary on-enter">OK</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question5">
-                                <div class="question-inner">
-                                    <div class="lp-ad-title upload-title-items">
-                                        <span>
-                                            Ad Headline
-                                        </span>
-                                    </div>
-                                    <div class="m-input-wrapper">
-                                        <input class="m-input on-enter" type="text">
-                                    </div>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="step3">
-                        <ul class="questions">
-                            <li class="question" id="question6">
-                                <div class="question-inner">
-                                    <div class="upload-choose-conversion">
-                                        <span class="upload-title-conversion upload-title-items">Choose Your Facebook Conversion Pixel Type</span>
-                                        <span class="upload-description-conversion">Choose Your Facebook Conversion Pixel Type</span>
-                                        <div class="upload-choose-conversion-btn">
-                                            <select name="" id="" class="m-select on-enter">
-                                                <option value="" selected="selected" disabled="disabled">Type or select an option</option>
-                                                <option value="">Item #1</option>
-                                                <option value="">Item #2</option>
-                                                <option value="">Item #3</option>
-                                                <option value="">Item #4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question7">
-                                <div class="question-inner">
-                                    <div class="upload-message-audience">
-                                        <img src="app/img/content/content7-img1.png" alt="">
-                                        <p>Great Job With Your Ads! Now Let’s Define Who You Want To See Those Beautiful Ads.</p>
-                                    </div>
-                                    <div class="upload-continue-btn">
-                                        <a href="" class="m-btn btn-secondary on-enter">Continue to Targeting</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question8">
-                                <div class="question-inner">
-                                    <div class="upload-custom-audience">
-                                        <span class="upload-title-items">Will You Be Targeting a Facebook Custom Audience?</span>
-                                        <div class="upload-custom-audience-btn on-enter">
-                                            <a href="" class="m-btn">Yes</a>
-                                            <a href="" class="m-btn">No</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question9">
-                                <div class="question-inner">
-                                    <div class="upload-choose-audience">
-                                        <span class="upload-title-items">Choose Your Custom Audience</span>
-                                        <div class="upload-choose-audience-btn">
-                                            <select name="" class="m-select on-enter">
-                                                <option value="" selected="selected" disabled="disabled">Type or select an option</option>
-                                                <option value="">Item #1</option>
-                                                <option value="">Item #2</option>
-                                                <option value="">Item #3</option>
-                                                <option value="">Item #4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="step4">
-                        <ul class="questions">
-                            <li class="question" id="question10">
-                                <div class="question-inner">
-                                    <div class="step4-spend-money">
-                                        <div class="step4-title">
-                                            <span class="upload-title-items">How Much Would You Like to Spend per Day per Adset?</span>
                                         </div>
                                         <div class="m-input-wrapper">
                                             <input class="m-input on-enter" type="text">
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question11">
-                                <div class="question-inner">
-                                    <div class="step4-when-start">
-                                        <div class="step4-title">
-                                            <span class="upload-title-items">When Would You Like Your Campaign To Start?</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="step2">
+                            <ul class="questions">
+                                <li class="line-100"></li>
+                                <li class="question" id="question3">
+                                    <div class="line-100"></div>
+                                    <div class="question-inner">
+                                        <div class="lp-ad-title upload-title-items">
+                                        <span>
+                                            Where Do You Want The Facebook Traffic To Go?
+                                        </span>
                                         </div>
-                                        <div class="m-input-img-wrapper">
-                                            <input class="m-input on-enter" type="text" placeholder="mm / dd / yyyy" id="datepicker">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question12">
-                                <div class="question-inner">
-                                    <div class="upload-message-audience">
-                                        <img src="app/img/content/content7-img1.png" alt="">
-                                        <p>Awesome, You Are Almost Done!
-                                            Lets Review Your Campaign Before We Publish It!</p>
-                                    </div>
-                                    <div class="upload-continue-btn">
-                                        <a href="" class="m-btn btn-secondary on-enter">Continue to Review</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="question" id="question13">
-                                <div class="question-inner">
-                                    <div class="step4-rate">
-                                        <div class="step4-rate-title">
-                                            <span class="upload-title-items">How Would You Rate Our Creation Tool?</span>
-                                        </div>
-                                        <div class="m-stars on-enter">
-                                            <span class="star">&nbsp;</span>
-                                            <span class="star">&nbsp;</span>
-                                            <span class="star">&nbsp;</span>
-                                            <span class="star">&nbsp;</span>
-                                            <span class="star">&nbsp;</span>
+                                        <div class="m-input-wrapper">
+                                            <input class="m-input on-enter" value="http://">
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question4">
+                                    <div class="question-inner">
+                                        <div class="upload-title upload-title-items">
+                                            <span>Select/Upload Your Media</span>
+                                        </div>
+                                        <div class="upload-image-video">
+                                            <div class="upload-content-wrapper">
+                                                <div class="switch-color">
+                                                    <a href="#" class="m-btn btn-primary on-enter">
+                                                        <img src="app/img/content/img.png" alt="">
+                                                        Image Library
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="upload-content-wrapper">
+                                                <div class="switch-color">
+                                                    <a href="#" class="m-btn btn-primary on-enter">
+                                                        <img src="app/img/content/play.png" alt="">
+                                                        Video Library
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                    </div>
-                    <div id="step5">
-                        <ul class="questions">
-                            <li class="question" id="question14">
-                                <div class="question-inner">
-                                    <div class="step5-show-panel">
-                                        <div class="step5-show-title">
+                                        <div class="uploader-file" id="show-louder">
+                                            <div class="upload-liberty-title upload-title-items">
+                                                <span>Choose From Library</span>
+                                            </div>
+                                            <div class="upload-btn">
+                                                <div class="upload-nav">
+                                                    <div class="upload-btn-wrapper">
+                                                        <button><span><img src="app/img/content/refresh.png" alt="">Refresh</span></button>
+                                                    </div>
+                                                    <div class="upload-btn-wrapper">
+                                                        <label for="files">
+                                                            <span><img src="app/img/content/cloud.png" alt="">Upload Image</span>
+                                                        </label>
+                                                        <input type="file" id="files" multiple/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="upload-preview-wrapper">
+                                                <div class="upload-preview" id="scroll-3">
+                                                    <div class="upload-img-wrapper">
+                                                        <img src="app/img/content/upload-img-1.png" alt="">
+                                                    </div>
+                                                    <div class="upload-img-wrapper">
+                                                        <img src="app/img/content/upload-img-2.png" alt="">
+                                                    </div>
+                                                    <div class="upload-img-wrapper">
+                                                        <img src="app/img/content/upload-img-3.png" alt="">
+                                                    </div>
+                                                    <div class="upload-img-wrapper">
+                                                        <img src="app/img/content/upload-img-4.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="upload-ok">
+                                                <div class="link-ok-wrapper">
+                                                    <a href="" class="m-btn btn-secondary on-enter">OK</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question5">
+                                    <div class="question-inner">
+                                        <div class="lp-ad-title upload-title-items">
+                                        <span>
+                                            Ad Headline
+                                        </span>
+                                        </div>
+                                        <div class="m-input-wrapper">
+                                            <input class="m-input on-enter" type="text">
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="step3">
+                            <ul class="questions">
+                                <li class="line-100"></li>
+                                <li class="question" id="question6">
+                                    <div class="question-inner">
+                                        <div class="upload-choose-conversion">
+                                            <span class="upload-title-conversion upload-title-items">Choose Your Facebook Conversion Pixel Type</span>
+                                            <span class="upload-description-conversion">Choose Your Facebook Conversion Pixel Type</span>
+                                            <div class="upload-choose-conversion-btn">
+                                                <select name="" id="" class="m-select on-enter">
+                                                    <option value="" selected="selected" disabled="disabled">Type or select an option</option>
+                                                    <option value="">Item #1</option>
+                                                    <option value="">Item #2</option>
+                                                    <option value="">Item #3</option>
+                                                    <option value="">Item #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question7">
+                                    <div class="question-inner">
+                                        <div class="upload-message-audience">
+                                            <img src="app/img/content/content7-img1.png" alt="">
+                                            <p>Great Job With Your Ads! Now Let’s Define Who You Want To See Those Beautiful Ads.</p>
+                                        </div>
+                                        <div class="upload-continue-btn">
+                                            <a href="" class="m-btn btn-secondary on-enter">Continue to Targeting</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question8">
+                                    <div class="question-inner">
+                                        <div class="upload-custom-audience">
+                                            <div class="upload-audience-title-wrapper">
+                                                <span class="upload-title-items">Will You Be Targeting a Facebook Custom Audience?</span>
+                                            </div>
+                                            <div class="upload-custom-audience-btn on-enter">
+                                                <a href="" class="m-btn">Yes</a>
+                                                <a href="" class="m-btn">No</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question9">
+                                    <div class="question-inner">
+                                        <div class="upload-choose-audience">
+                                            <span class="upload-title-items">Choose Your Custom Audience</span>
+                                            <div class="upload-choose-audience-btn">
+                                                <select name="" class="m-select on-enter">
+                                                    <option value="" selected="selected" disabled="disabled">Type or select an option</option>
+                                                    <option value="">Item #1</option>
+                                                    <option value="">Item #2</option>
+                                                    <option value="">Item #3</option>
+                                                    <option value="">Item #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="step4">
+                            <ul class="questions">
+                                <li class="line-100"></li>
+                                <li class="question" id="question10">
+                                    <div class="question-inner">
+                                        <div class="step4-spend-money">
+                                            <div class="step4-title">
+                                                <span class="upload-title-items">How Much Would You Like to Spend per Day per Adset?</span>
+                                            </div>
+                                            <div class="m-input-wrapper">
+                                                <input class="m-input on-enter" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question11">
+                                    <div class="question-inner">
+                                        <div class="step4-when-start">
+                                            <div class="step4-title">
+                                                <span class="upload-title-items">When Would You Like Your Campaign To Start?</span>
+                                            </div>
+                                            <div class="m-input-img-wrapper">
+                                                <input class="m-input on-enter" type="text" placeholder="mm / dd / yyyy" id="datepicker">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question12">
+                                    <div class="question-inner">
+                                        <div class="upload-message-audience">
+                                            <img src="app/img/content/content7-img1.png" alt="">
+                                            <p>Awesome, You Are Almost Done!
+                                                Lets Review Your Campaign Before We Publish It!</p>
+                                        </div>
+                                        <div class="upload-continue-btn">
+                                            <a href="" class="m-btn btn-secondary on-enter">Continue to Review</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-100"></li>
+                                <li class="question" id="question13">
+                                    <div class="question-inner">
+                                        <div class="step4-rate">
+                                            <div class="step4-rate-title">
+                                                <span class="upload-title-items">How Would You Rate Our Creation Tool?</span>
+                                            </div>
+                                            <div class="m-stars on-enter">
+                                                <span class="star">&nbsp;</span>
+                                                <span class="star">&nbsp;</span>
+                                                <span class="star">&nbsp;</span>
+                                                <span class="star">&nbsp;</span>
+                                                <span class="star">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="step5">
+                            <ul class="questions">
+                                <li class="line-100"></li>
+                                <li class="question" id="question14">
+                                    <div class="question-inner">
+                                        <div class="step5-show-panel">
+                                            <div class="step5-show-title">
                                         <span>
                                             Showing Ad #1 of 10
                                         </span>
+                                            </div>
+                                            <div class="step5-show-refresh">
+                                                <img src="app/img/content/refresh.png" alt="">
+                                                <a href="">Refresh</a>
+                                            </div>
+                                            <div class="step-show-btn">
+                                                <a href="#">
+                                                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                                </a>
+                                                <span></span>
+                                                <a href="#">
+                                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="step5-show-refresh">
-                                            <img src="app/img/content/refresh.png" alt="">
-                                            <a href="">Refresh</a>
-                                        </div>
-                                        <div class="step-show-btn">
-                                            <a href="">
-                                                <i class="fa fa-caret-left" aria-hidden="true"></i>
-                                            </a>
-                                            <span></span>
-                                            <a href="">
-                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                            </a>
+                                        <div class="step5-facebook-wrapper">
+                                            <img src="app/img/content/facebook-post.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="step5-facebook-wrapper">
-                                        <img src="app/img/content/facebook-post.png" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
