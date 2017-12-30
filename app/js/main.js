@@ -1,8 +1,17 @@
-$(function() {
-	// for menu toggle
-	function menu_toggle(header) {
-		header.classList.toggle('show');
+// scroll
+$(function () { // wait for document ready
+	var datepicker = $("#datepicker");
+
+	// run datepicker
+	if(datepicker) {
+		// date picker
+		datepicker.datepicker();
 	}
+
+
+	// function menu_toggle(header) {
+	// 	header.classList.toggle('show');
+	// }
 
 	// for accordion
 	var acc = document.getElementsByClassName("accordion");
@@ -20,25 +29,9 @@ $(function() {
 		}
 	}
 
-// date picker
-	$( function() {
-		$( "#datepicker" ).datepicker({
-			showOn: "button",
-			buttonImage: "app/img/content/calendar.png",
-			buttonImageOnly: true,
-			buttonText: "Select date"
-		});
-	} );
-});
-// scroll
-$(function () { // wait for document ready
 	// init controller
 	var controller = new ScrollMagic.Controller({container: "#scroll-1"}),
-		controller1 = runController(1),
-		controller2, scene2,
-		controller3, scene3,
-		controller4, scene4,
-		controller5, scene5;
+		controller1 = runController(1);
 
 	var scene1 = new ScrollMagic.Scene({triggerElement: "#step1"})
 		.addTo(controller1);
@@ -65,7 +58,17 @@ $(function () { // wait for document ready
 		});
 	}
 
-	$(".on-enter").on( "click", function(event) {
+	$('input').keypress(function(event) {
+		if(event.which === 13) {
+			runNext();
+		}
+	});
+
+	$('.on-enter').on('click', function () {
+		runNext();
+	});
+
+	function runNext() {
 		event.preventDefault();
 
 		var strId = $(event.target).closest('.question').attr('id'),
@@ -126,7 +129,7 @@ $(function () { // wait for document ready
 				break;
 			}
 		}
-	});
+	}
 
 	function runController(num) {
 		return new ScrollMagic.Controller({container: "#scroll-1", globalSceneOptions: {duration: $('#step' + num).height()}});
@@ -160,51 +163,44 @@ $(function () { // wait for document ready
 			showBlock.addClass('active');
 		}
 	}
+
+	// star rating
+	var rating = 3;
+	var stars = null;
+
+	//initial setup
+	document.addEventListener('DOMContentLoaded', function(){
+		stars = document.querySelectorAll('.star');
+		addListeners();
+		setRating(); //based on global rating variable value
+	});
+
+	function addListeners(){
+		[].forEach.call(stars, function(star, index){
+			star.addEventListener('click', (function(idx){
+				// console.log('adding listener', index);
+				return function(){
+					rating = idx + 1;
+					setRating();
+				}
+			})(index));
+		});
+
+	}
+
+	function setRating(){
+		[].forEach.call(stars, function(star, index){
+			if(rating > index){
+				star.classList.add('rated');
+			}else{
+				star.classList.remove('rated');
+			}
+		});
+	}
+
+	// SCROLL ON ENTER
+	document.getElementById("question1").addEventListener("keydown", function(event) {
+		if (!event) { var event = window.event; }
+		event.preventDefault(); // sometimes useful
+	}, false);
 });
-
-// star rating
-
-var rating = 3;
-var stars = null;
-
-//initial setup
-document.addEventListener('DOMContentLoaded', function(){
-    stars = document.querySelectorAll('.star');
-    addListeners();
-    setRating(); //based on global rating variable value
-});
-
-function addListeners(){
-    [].forEach.call(stars, function(star, index){
-        star.addEventListener('click', (function(idx){
-            // console.log('adding listener', index);
-            return function(){
-                rating = idx + 1;
-                // console.log('Rating is now', rating)
-                setRating();
-            }
-        })(index));
-    });
-
-}
-
-function setRating(){
-    [].forEach.call(stars, function(star, index){
-        if(rating > index){
-            star.classList.add('rated');
-            // console.log('added rated on', index );
-        }else{
-            star.classList.remove('rated');
-            // console.log('removed rated on', index );
-        }
-    });
-}
-
-// SCROLL ON ENTER
-document.getElementById("question1").addEventListener("keydown", function(e) {
-    if (!e) { var e = window.event; }
-    e.preventDefault(); // sometimes useful
-
-    // Enter is pressed
-    if (e.keyCode == 13) { submitFunction(); }
-}, false);
