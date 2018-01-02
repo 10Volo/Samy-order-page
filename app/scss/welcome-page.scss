@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('../fonts/Gotham-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../fonts/Gotham-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('../fonts/Raleway-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "modules-creation";
+@import "m-btn";
+@import "m-input";
+@import "m-select";
+@import "m-rating";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  color: #868686;
+  background-color: #F7F7F7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #868686;
+  &:hover {
+    color: #868686;
+  }
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 5px #bbb;
+  padding: 20px 0;
+  .header-logo-wrapper {
+    margin: 0 35px;
+    @media (max-width: 1230px) {
+      margin: 0 10px;
+    }
+    img {
+      @media (max-width: 500px) {
+        width: 200px;
+      }
+      @media (max-width: 405px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .header-user-wrapper {
+    display: flex;
+    margin: 0 35px;
+    @media (max-width: 1230px) {
+      margin: 0 10px;
+    }
+    @media (max-width: 767px) {
+      margin: 0 95px 0 10px;
+    }
+    @media (max-width: 405px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+    .user-avatar {
+      img {
+        @media (max-width: 500px) {
+          width: 30px;
+        }
+      }
+    }
+    .user-name {
+      display: flex;
+      @media (max-width: 1045px) {
+        align-items: center;
+      }
+      @media (max-width: 500px) {
+        align-items: baseline;
+      }
+      span {
+        color: #0C508E;
+        font-size: 16px;
+        margin: 5px 20px;
+        @media (max-width: 1045px) {
+          font-size: 16px;
+        }
+        @media (max-width: 500px) {
+          margin: 0 5px;
+          font-size: 14px;
+        }
+      }
+      .user-drop-down {
+        i {
+          color: #0C508E;
+          font-size: 14px;
+          @media (max-width: 1045px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.what-would-you-like {
+  position: relative;
+  top: 80px;
+  margin-bottom: 80px;
+  .like-title {
+    font-family: 'Gotham-Book';
+    text-align: center;
+    margin: 40px;
+    h2 {
+      color: #1079B2;
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
+  .like-options {
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+      .like-option {
+        background-color: #ffffff;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 30px 35px;
+        &:hover {
+          background-color: #ACFFED;
+          -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+          -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+        }
+        @media (max-width: 1200px) {
+          height: 400px;
+          margin-bottom: 15px;
+          padding: 20px;
+          &:hover {
+            -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+          }
+        }
+        @media (max-width: 960px) {
+          height: 350px;
+        }
+        @media (max-width: 720px) {
+          height: auto;
+        }
+        .like-option-img {
+          img {
+            margin-bottom: 10px;
+          }
+        }
+        .like-option-title {
+          margin: 15px 0;
+          @media (max-width: 720px) {
+            margin: 10px 0;
+          }
+          h3 {
+            color: #1079B2;
+            text-align: center;
+          }
+        }
+        .like-option-description {
+          p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+  .like-help {
+    text-align: center;
+    border-bottom: 1px;
+    margin: 30px 0;
+    a {
+      color: #1079B2;
+      border-bottom: 2px solid;
+      padding-bottom: 1px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px -3px 5px 0px #bbb;
+  padding: 15px 0;
+  @media (max-width: 767px) {
+    padding: 10px 0;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .footer-menu {
+      width: 50%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style-type: none;
+        @media (max-width: 767px) {
+          width: 100%;
+          justify-content: space-around;
+        }
+        li {
+          a {
+            color: $color-main;
+            font-size: 18px;
+            @media (max-width: 767px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .footer-social {
+      width: 50%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .footer-social-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          width: 60%;
+          list-style-type: none;
+          @media (max-width: 767px) {
+            width: 100%;
+            justify-content: space-around;
+          }
+          li {
+            a {
+
+              img {
+                width: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
