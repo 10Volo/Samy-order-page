@@ -10,58 +10,411 @@
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="app/css/reporting.css">
     <!--for date picker-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!--for datepicker-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="app/js/main.js"></script>
+    <script src="app/js/reporting.js"></script>
     <script src="https://use.fontawesome.com/8a677bed15.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-logo-wrapper">
-            <img src="app/img/header/logo.png" alt="">
-        </div>
-        <div class="header-menu-nav">
-            <div class="menu">
-                <ul>
-                    <li class="items"><a href=""><img src="app/img/header/content-img-1.png" alt="" width="36" height="28">Create</a></li>
-                    <li class="items"><a href=""><img src="app/img/header/content-img-2.png" alt="" width="34" height="27">Report</a></li>
-                    <li class="items"><a href=""><img src="app/img/header/content-img-3.png" alt="" width="43" height="24">Optimize</a></li>
-                    <li class="items"><a href=""><img src="app/img/header/content-img-4.png" alt="" width="26" height="28">Analyze</a></li>
-                </ul>
-            </div>
-            <div class="toggle" onclick="menu_toggle(this.parentNode)">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="header-user-wrapper align-items-center">
-            <div class="user-avatar">
-                <img src="app/img/header/user.png" alt="">
-            </div>
-            <div class="user-name">
-                <span>User</span>
-                <div class="user-drop-down">
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="reporting-title">
-        <div class="container">
-            Pizda vesela kolo hatu, chekaje svogo skrupalya
-        </div>
+	<header>
+		<div class="header-logo-wrapper">
+			<img src="app/img/header/logo.png" alt="">
+		</div>
+		<div class="header-menu-nav">
+			<div class="menu">
+				<ul>
+					<li class="items"><a href=""><img src="app/img/header/content-img-1.png" alt="" width="36" height="28">Create</a>
+					</li>
+					<li class="items"><a href=""><img src="app/img/header/content-img-2.png" alt="" width="34" height="27">Report</a>
+					</li>
+					<li class="items"><a href=""><img src="app/img/header/content-img-3.png" alt="" width="43" height="24">Optimize</a>
+					</li>
+					<li class="items"><a href=""><img src="app/img/header/content-img-4.png" alt="" width="26" height="28">Analyze</a>
+					</li>
+				</ul>
+			</div>
+			<div class="toggle" onclick="menu_toggle(this.parentNode)">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="header-user-wrapper align-items-center">
+			<div class="user-avatar">
+				<img src="app/img/header/user.png" alt="">
+			</div>
+			<div class="user-name">
+				<span>User</span>
+				<div class="user-drop-down">
+					<i class="fa fa-caret-down" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="reporting-title">
+		<div class="container">
+			<div class="reporting-title-wrapper">
+				<div class="reporting-title-img"><img src="app/img/content/speet-test.png" alt=""></div>
+				<div class="reporting-title-calendar">
+					<div class="m-datepiker">
+						<img src="app/img/content/calendar.png" alt="">
+						<input type="text" id="datepicker" placeholder="03/01/2018"/>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
 
-    <section class="reporting-spent"></section>
+    <section class="reporting-spent">
+	    <div class="container">
+		    <div class="reporting-spent-wrapper">
+			    <div class="row">
+				    <div class="col-sm-4 padding0">
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+							    <div class="spent-title-wrapper"><h4>Total Spent</h4></div>
+							    <div class="spent-description-wrapper"><p>How much you spent</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>$17,800</span></div>
+					    </div>
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+							    <div class="spent-title-wrapper"><h4>Impressions</h4></div>
+							    <div class="spent-description-wrapper"><p>Ad impressions</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>$1,227,800</span></div>
+					    </div>
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+							    <div class="spent-title-wrapper"><h4>CPM</h4></div>
+							    <div class="spent-description-wrapper"><p>Cost per 1k Impressions</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>$1.342</span></div>
+					    </div>
+				    </div>
+				    <div class="col-sm-4 padding0">
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+						        <div class="spent-title-wrapper"><h4>Clicks</h4></div>
+							    <div class="spent-description-wrapper"><p>Clicks to Site</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>$7,800</span></div>
+					    </div>
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+						        <div class="spent-title-wrapper"><h4>CPC</h4></div>
+							    <div class="spent-description-wrapper"><p>Cost Per Click</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>$1.231</span></div>
+					    </div>
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+						        <div class="spent-title-wrapper"><h4>Click Through Rate</h4></div>
+							    <div class="spent-description-wrapper"><p>Clicks per 1k Impressions</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>1.34%</span></div>
+					    </div>
+				    </div>
+				    <div class="col-sm-4 padding0">
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+						        <div class="spent-title-wrapper"><h4>Ad Engagement</h4></div>
+							    <div class="spent-description-wrapper"><p>Likes+Comments+Shares</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>$17,800</span></div>
+					    </div>
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+						        <div class="spent-title-wrapper"><h4>CPC</h4></div>
+							    <div class="spent-description-wrapper"><p>Per 1k Impressions</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>2.55%</span></div>
+					    </div>
+					    <div class="spent-items-wrapper">
+						    <div class="spent-info-wrapper">
+						        <div class="spent-title-wrapper"><h4>Frequency</h4></div>
+							    <div class="spent-description-wrapper"><p>Times seen by 1 Person</p></div>
+						    </div>
+						    <div class="spent-price-wrapper"><span>1.34</span></div>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </section>
 
-    <section class="reporting-stat"></section>
+    <section class="reporting-stat">
+	    <div class="container">
+		    <div class="reporting-stat-wrapper">
+			    <div class="stat-choose-data-wrapper">
+				    <div class="choose-data-select-wrapper">
+					    <div class="choose-data-title"><h3>What Data Would You Like To Focus On</h3></div>
+					    <div class="select-img">
+						    <select name="" id="" class="m-select">
+							    <option value="" selected="selected" disabled="disabled">Choose Data</option>
+							    <option value="">Item #1</option>
+							    <option value="">Item #2</option>
+							    <option value="">Item #3</option>
+							    <option value="">Item #4</option>
+						    </select>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="leads-wrapper">
+				    <div class="leads"><span class="leads-price">2,332</span><span class="leads-title">Total Leads</span></div>
+				    <div class="leads"><span class="leads-price">$1.23</span><span class="leads-title">Per Leads</span></div>
+				    <div class="leads"><span class="leads-price">2.23%</span><span class="leads-title">Lead Rate</span></div>
+			    </div>
+			    <div class="reporting-users-wrapper">
+				    <div class="row">
+					    <div class="col-sm-12 col-md-2">
+						    <div class="reporting-user-title"><span>GENDER</span></div>
+					    </div>
+					    <div class="col-sm-12 col-md-10">
+						    <div class="user-gender-data">
+							    <div class="row">
+								    <div class="col-sm-6">
+									    <div class="gender-user-wrapper line">
+										    <div class="user-gender-title"><h4>Men</h4></div>
+										    <div class="user-gender-avatar"><img src="app/img/content/men.png" alt=""></div>
+										    <div class="user-gender-percent"><span>82.4%</span></div>
+									    </div>
+								    </div>
+								    <div class="col-sm-6">
+									    <div class="gender-user-wrapper">
+										    <div class="user-gender-title"><h4>Women</h4></div>
+										    <div class="user-gender-avatar"><img src="app/img/content/women.png" alt=""></div>
+										    <div class="user-gender-percent"><span>82.4%</span></div>
+									    </div>
+								    </div>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="reporting-users-age-wrapper">
+				    <div class="row">
+					    <div class="col-md-2">
+						    <div class="reporting-age-title"><span>AGE</span></div>
+					    </div>
+					    <div class="col-md-10">
+						    <div class="user-age-data">
+							    <div class="user-age-wrapper">
+								    <div class="user-age"><span>18 - 24</span></div>
+								    <div class="user-percent"><span>82.4%</span></div>
+							    </div>
+							    <div class="user-age-wrapper">
+								    <div class="user-age"><span>25 - 34</span></div>
+								    <div class="user-percent"><span>82.4%</span></div>
+							    </div>
+							    <div class="user-age-wrapper">
+								    <div class="user-age"><span>35 - 44</span></div>
+								    <div class="user-percent"><span>82.4%</span></div>
+							    </div>
+							    <div class="user-age-wrapper">
+								    <div class="user-age"><span>45 - 54</span></div>
+								    <div class="user-percent"><span>82.4%</span></div>
+							    </div>
+							    <div class="user-age-wrapper">
+								    <div class="user-age"><span>55 - 64+</span></div>
+								    <div class="user-percent"><span>82.4%</span></div>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="reporting-users-placement-wrappers">
+				    <div class="row">
+					    <div class="col-md-2">
+						    <div class="reporting-placement-title"><span>PLACEMENT</span></div>
+					    </div>
+					    <div class="col-md-10">
+						    <div class="user-placement-data">
+							    <div class="user-placement-wrapper">
+								    <div class="user-placement-title"><span>Desktop Feed</span></div>
+								    <div class="user-placement-content">
+									    <div class="user-placement-img"><img src="app/img/content/desktop.png" alt=""></div>
+									    <div class="user-placement-percent"><span>82.4%</span></div>
+								    </div>
+							    </div>
+							    <div class="user-placement-wrapper">
+								    <div class="user-placement-title"><span>Mobile Feed</span></div>
+								    <div class="user-placement-content">
+									    <div class="user-placement-img"><img src="app/img/content/mobile.png" alt=""></div>
+									    <div class="user-placement-percent"><span>82.4%</span></div>
+								    </div>
+							    </div>
+							    <div class="user-placement-wrapper">
+								    <div class="user-placement-title"><span>Instagram</span></div>
+								    <div class="user-placement-content">
+									    <div class="user-placement-img"><img src="app/img/content/istagram.png" alt=""></div>
+									    <div class="user-placement-percent"><span>82.4%</span></div>
+								    </div>
+							    </div>
+							    <div class="user-placement-wrapper">
+								    <div class="user-placement-title"><span>Desktop Side</span></div>
+								    <div class="user-placement-content">
+									    <div class="user-placement-img"><img src="app/img/content/desktop.png" alt=""></div>
+									    <div class="user-placement-percent"><span>82.4%</span></div>
+								    </div>
+							    </div>
+							    <div class="user-placement-wrapper">
+								    <div class="user-placement-title"><span>Audience Network</span></div>
+								    <div class="user-placement-content">
+									    <div class="user-placement-img"><img src="app/img/content/audience.png" alt=""></div>
+									    <div class="user-placement-percent"><span>82.4%</span></div>
+								    </div>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </section>
 
-    <section class="reporting-settings"></section>
+    <section class="reporting-setting">
+	    <div class="container">
+		    <div class="reporting-setting-wrapper">
+			    <div class="reporting-title-select">
+				    <div class="reporting-setting-title">
+					    <h3>Current Campaign Data</h3>
+				    </div>
+				    <div class="reporting-setting-select">
+					    <span>Filter</span>
+					    <select name="" class="m-select">
+						    <option value="" selected="selected" disabled="disabled">Show Active Campaign</option>
+						    <option value="">Item #1</option>
+						    <option value="">Item #2</option>
+						    <option value="">Item #3</option>
+						    <option value="">Item #4</option>
+					    </select>
+				    </div>
+			    </div>
+			    <div class="reporting-setting-table">
+				    <table>
+					    <tr>
+						    <th>STATUS</th>
+						    <th>CAMPAIGN NAME</th>
+						    <th>CLICKS</th>
+						    <th>CONVERSIONS</th>
+						    <th>ENGAGEMENT</th>
+						    <th>PAGE LIKES</th>
+						    <th>CTR</th>
+						    <th>IMPRESSIONS</th>
+					    </tr>
+					    <tr>
+						    <td>
+							    <div class="wrap">
+								    <input type="checkbox" id="reportingSwitch1" checked=""  />
+								    <label class="slider-v3" for="reportingSwitch1"></label>
+							    </div>
+						    </td>
+						    <td>Post: “Check out our newest..”</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>%3.55</td>
+						    <td>%3.55</td>
+						    <td>100,124</td>
+					    </tr>
+					    <tr>
+						    <td>
+							    <div class="wrap">
+								    <input type="checkbox" id="reportingSwitch2" checked=""  />
+								    <label class="slider-v3" for="reportingSwitch2"></label>
+							    </div>
+						    </td>
+						    <td>Post: “Check out our newest..”</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>%3.55</td>
+						    <td>%3.55</td>
+						    <td>100,124</td>
+					    </tr>
+					    <tr>
+						    <td>
+							    <div class="wrap">
+								    <input type="checkbox" id="reportingSwitch3" />
+								    <label class="slider-v3" for="reportingSwitch3"></label>
+							    </div>
+						    </td>
+						    <td>Post: “Check out our newest..”</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>%3.55</td>
+						    <td>%3.55</td>
+						    <td>100,124</td>
+					    </tr>
+					    <tr>
+						    <td>
+							    <div class="wrap">
+								    <input type="checkbox" id="reportingSwitch4" />
+								    <label class="slider-v3" for="reportingSwitch4"></label>
+							    </div>
+						    </td>
+						    <td>Post: “Check out our newest..”</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>%3.55</td>
+						    <td>%3.55</td>
+						    <td>100,124</td>
+					    </tr>
+					    <tr>
+						    <td>
+							    <div class="wrap">
+								    <input type="checkbox" id="reportingSwitch5" />
+								    <label class="slider-v3" for="reportingSwitch5"></label>
+							    </div>
+						    </td>
+						    <td>Post: “Check out our newest..”</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>3,321 @ 0.32</td>
+						    <td>%3.55</td>
+						    <td>%3.55</td>
+						    <td>100,124</td>
+					    </tr>
+				    </table>
+			    </div>
+			    <div class="reporting-table-nav">
+				    <div class="table-pagination-wrapper">
+					    <a href="" class="table-nav-circle"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+					    <a href="" class="table-nav-circle"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+					    <a href="" class="nav-pagination-active"><i>1</i></a>
+					    <a href=""><i>2</i></a>
+					    <a href=""><i>3</i></a>
+					    <a href="" class="nav-pagination-dots"><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i></a>
+					    <a href="" class="table-nav-circle"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					    <a href="" class="table-nav-circle"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+				    </div>
+				    <div class="table-setting-pagination-wrapper">
+					    <div class="table-nav-select">
+						    <select name="" class="">
+							    <option value="" selected="selected">10</option>
+							    <option value="">25</option>
+							    <option value="">50</option>
+							    <option value="">100</option>
+							    <option value="">all</option>
+						    </select>
+					    </div>
+					    <div class="table-nav-info">
+						    <span>Displaying 1 - 10 of 150 records</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </section>
 
     <footer>
         <div class="container">

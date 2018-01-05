@@ -7,11 +7,20 @@ $(function () { // wait for document ready
 		// date picker
 		datepicker.datepicker();
 	}
-
-
-	// function menu_toggle(header) {
-	// 	header.classList.toggle('show');
-	// }
+	
+	// $(function() {
+	// 	$("#datepicker").datepicker({
+	// 		showOn: "button",
+	// 		buttonImage: "https://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+	// 		buttonImageOnly: true,
+	// 		buttonText: "Select date"
+	// 	});
+	// });
+	
+	// hide/show menu
+	function menu_toggle(header) {
+		header.classList.toggle('show');
+	}
 
 	// for accordion
 	var acc = document.getElementsByClassName("accordion");

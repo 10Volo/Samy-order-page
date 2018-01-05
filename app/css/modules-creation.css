@@ -92,6 +92,8 @@
     left: 0;
     bottom: 9px; }
   .m-input-img-wrapper input.m-input {
+    background-image: url(../../app/img/content/calendar.png);
+    background-repeat: no-repeat;
     color: #444a54;
     width: 100%;
     border-top: none;
@@ -102,9 +104,27 @@
     font-size: 17px;
     font-weight: 600;
     outline: none;
+    padding-top: 20px;
     padding-left: 80px; }
   .m-input-img-wrapper input::placeholder {
     font-weight: 600; }
+
+.m-datepiker {
+  margin-top: 3px; }
+  .m-datepiker img {
+    width: 37px;
+    height: 31px;
+    cursor: pointer; }
+    .m-datepiker img:active {
+      transform: translateY(4px); }
+  .m-datepiker input {
+    color: #444a54;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-family: 'Gotham-Book';
+    font-size: 17px;
+    font-weight: 500; }
 
 select.m-select {
   width: 100%;

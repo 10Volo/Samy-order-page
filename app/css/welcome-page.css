@@ -110,6 +110,8 @@
     left: 0;
     bottom: 9px; }
   .m-input-img-wrapper input.m-input {
+    background-image: url(../../app/img/content/calendar.png);
+    background-repeat: no-repeat;
     color: #444a54;
     width: 100%;
     border-top: none;
@@ -120,9 +122,27 @@
     font-size: 17px;
     font-weight: 600;
     outline: none;
+    padding-top: 20px;
     padding-left: 80px; }
   .m-input-img-wrapper input::placeholder {
     font-weight: 600; }
+
+.m-datepiker {
+  margin-top: 3px; }
+  .m-datepiker img {
+    width: 37px;
+    height: 31px;
+    cursor: pointer; }
+    .m-datepiker img:active {
+      transform: translateY(4px); }
+  .m-datepiker input {
+    color: #444a54;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-family: 'Gotham-Book';
+    font-size: 17px;
+    font-weight: 500; }
 
 select.m-select {
   width: 100%;
@@ -469,6 +489,8 @@ div.panel {
     left: 0;
     bottom: 9px; }
   .m-input-img-wrapper input.m-input {
+    background-image: url(../../app/img/content/calendar.png);
+    background-repeat: no-repeat;
     color: #444a54;
     width: 100%;
     border-top: none;
@@ -479,9 +501,27 @@ div.panel {
     font-size: 17px;
     font-weight: 600;
     outline: none;
+    padding-top: 20px;
     padding-left: 80px; }
   .m-input-img-wrapper input::placeholder {
     font-weight: 600; }
+
+.m-datepiker {
+  margin-top: 3px; }
+  .m-datepiker img {
+    width: 37px;
+    height: 31px;
+    cursor: pointer; }
+    .m-datepiker img:active {
+      transform: translateY(4px); }
+  .m-datepiker input {
+    color: #444a54;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-family: 'Gotham-Book';
+    font-size: 17px;
+    font-weight: 500; }
 
 select.m-select {
   width: 100%;
@@ -624,7 +664,7 @@ header {
 section.what-would-you-like {
   position: relative;
   top: 80px;
-  margin-bottom: 80px; }
+  margin-bottom: 100px; }
   section.what-would-you-like .like-title {
     font-family: 'Gotham-Book';
     text-align: center;
@@ -694,7 +734,7 @@ section.what-would-you-like {
         text-decoration: none; }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   z-index: 2;

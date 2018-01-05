@@ -1,3 +1,4 @@
+@import url(../css/modules-creation.css);
 @font-face {
   font-family: 'Gotham-Bold';
   src: url("../fonts/Gotham-Bold.woff") format("woff");
@@ -110,6 +111,8 @@
     left: 0;
     bottom: 9px; }
   .m-input-img-wrapper input.m-input {
+    background-image: url(../../app/img/content/calendar.png);
+    background-repeat: no-repeat;
     color: #444a54;
     width: 100%;
     border-top: none;
@@ -120,9 +123,27 @@
     font-size: 17px;
     font-weight: 600;
     outline: none;
+    padding-top: 20px;
     padding-left: 80px; }
   .m-input-img-wrapper input::placeholder {
     font-weight: 600; }
+
+.m-datepiker {
+  margin-top: 3px; }
+  .m-datepiker img {
+    width: 37px;
+    height: 31px;
+    cursor: pointer; }
+    .m-datepiker img:active {
+      transform: translateY(4px); }
+  .m-datepiker input {
+    color: #444a54;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-family: 'Gotham-Book';
+    font-size: 17px;
+    font-weight: 500; }
 
 select.m-select {
   width: 100%;
@@ -469,6 +490,8 @@ div.panel {
     left: 0;
     bottom: 9px; }
   .m-input-img-wrapper input.m-input {
+    background-image: url(../../app/img/content/calendar.png);
+    background-repeat: no-repeat;
     color: #444a54;
     width: 100%;
     border-top: none;
@@ -479,9 +502,27 @@ div.panel {
     font-size: 17px;
     font-weight: 600;
     outline: none;
+    padding-top: 20px;
     padding-left: 80px; }
   .m-input-img-wrapper input::placeholder {
     font-weight: 600; }
+
+.m-datepiker {
+  margin-top: 3px; }
+  .m-datepiker img {
+    width: 37px;
+    height: 31px;
+    cursor: pointer; }
+    .m-datepiker img:active {
+      transform: translateY(4px); }
+  .m-datepiker input {
+    color: #444a54;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-family: 'Gotham-Book';
+    font-size: 17px;
+    font-weight: 500; }
 
 select.m-select {
   width: 100%;
@@ -536,9 +577,6 @@ body {
   margin: 0; }
 
 section {
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 0; }
 
 ul {
@@ -551,8 +589,11 @@ a {
   a:hover {
     text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
+
+.padding0 {
+  padding: 0; }
 
 header {
   width: 100%;
@@ -606,9 +647,7 @@ header {
         display: inline-block;
         margin-top: 90px; } }
     header .header-menu-nav .menu ul li.items {
-      display: flex;
-      align-items: center;
-      width: 165px;
+      width: 150px;
       height: 35px;
       border-radius: 15px;
       box-shadow: 0px 1px 5px #bbbbbb;
@@ -624,6 +663,10 @@ header {
         header .header-menu-nav .menu ul li.items {
           box-shadow: none; } }
       header .header-menu-nav .menu ul li.items a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
         font-size: 18px; }
         @media (max-width: 1230px) {
           header .header-menu-nav .menu ul li.items a {
@@ -725,10 +768,418 @@ header {
 
 section.reporting-title {
   position: relative;
-  top: 90px; }
+  margin-top: 80px; }
+  section.reporting-title .reporting-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px; }
+    section.reporting-title .reporting-title-wrapper .reporting-title-img {
+      margin: 0 20px; }
+    section.reporting-title .reporting-title-wrapper .reporting-title-calendar {
+      margin: 0 20px;
+      position: relative; }
+
+section.reporting-spent {
+  position: relative;
+  margin-top: 20px; }
+  section.reporting-spent .reporting-spent-wrapper {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding: 15px 30px; }
+    section.reporting-spent .reporting-spent-wrapper .padding0:nth-child(1) .spent-items-wrapper {
+      border-left: none; }
+    section.reporting-spent .reporting-spent-wrapper .padding0:nth-child(3) .spent-items-wrapper {
+      border-right: none; }
+    section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border: 1px solid #dcdcdc;
+      padding: 20px 20px; }
+      section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper:last-child {
+        border-bottom: none; }
+      section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper:first-child {
+        border-top: none; }
+      section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper .spent-info-wrapper {
+        display: flex;
+        flex-direction: column; }
+        section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper .spent-info-wrapper .spent-title-wrapper h4 {
+          color: #373737;
+          font-family: 'Gotham-Book';
+          font-size: 22px; }
+        section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper .spent-info-wrapper .spent-description-wrapper p {
+          color: #676767;
+          font-family: 'Gotham-Book';
+          font-size: 18px; }
+      section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper .spent-price-wrapper {
+        display: flex;
+        justify-content: flex-end; }
+        section.reporting-spent .reporting-spent-wrapper .spent-items-wrapper .spent-price-wrapper span {
+          color: #107cb3;
+          font-family: 'Gotham-Book';
+          font-size: 24px;
+          font-weight: 800; }
+
+section.reporting-stat {
+  position: relative;
+  margin-top: 20px; }
+  section.reporting-stat .reporting-stat-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px; }
+    section.reporting-stat .reporting-stat-wrapper .stat-choose-data-wrapper .choose-data-select-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 20px; }
+      section.reporting-stat .reporting-stat-wrapper .stat-choose-data-wrapper .choose-data-select-wrapper .choose-data-title h3 {
+        color: #676767;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 600; }
+      section.reporting-stat .reporting-stat-wrapper .stat-choose-data-wrapper .choose-data-select-wrapper .select-img {
+        width: 270px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../../app/img/content/darts.png");
+        -ms-background-position-y: 20%;
+        background-repeat: no-repeat; }
+        section.reporting-stat .reporting-stat-wrapper .stat-choose-data-wrapper .choose-data-select-wrapper .select-img select.m-select {
+          width: 200px;
+          height: 52px;
+          border: 1px solid #b0b0b0;
+          color: #b8b8b8;
+          font-family: 'Gotham-Book';
+          font-size: 18px;
+          font-weight: 300; }
+    section.reporting-stat .reporting-stat-wrapper .leads-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px; }
+      section.reporting-stat .reporting-stat-wrapper .leads-wrapper .leads {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 7px;
+        cursor: pointer;
+        padding: 10px 20px; }
+        section.reporting-stat .reporting-stat-wrapper .leads-wrapper .leads:active, section.reporting-stat .reporting-stat-wrapper .leads-wrapper .leads:focus, section.reporting-stat .reporting-stat-wrapper .leads-wrapper .leads:hover {
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+          border-radius: 7px;
+          background-color: #f7f7f7; }
+        section.reporting-stat .reporting-stat-wrapper .leads-wrapper .leads .leads-price {
+          color: #fd4747;
+          font-family: 'Gotham-Book';
+          font-size: 26px;
+          font-weight: 800; }
+        section.reporting-stat .reporting-stat-wrapper .leads-wrapper .leads .leads-title {
+          color: #676767;
+          font-family: 'Gotham-Book';
+          font-size: 22px;
+          font-weight: 800; }
+    section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper {
+      margin: 20px 7px 0 7px; }
+      section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .reporting-user-title {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        background-color: #f7f7f7; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .reporting-user-title span {
+          color: #676767;
+          font-family: 'Gotham-Book';
+          font-size: 24px;
+          font-weight: 800; }
+      section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data {
+        border-bottom: 1px solid #dcdcdc;
+        padding-bottom: 10px; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data .line {
+          border-right: 1px solid #dcdcdc; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data .gender-user-wrapper {
+          display: flex;
+          justify-content: space-around;
+          margin-left: 10px; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data .gender-user-wrapper .user-gender-title h4 {
+            color: #676767;
+            font-family: 'Gotham-Book';
+            font-size: 20px;
+            font-weight: 300; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data .gender-user-wrapper .user-gender-percent {
+            display: flex;
+            align-items: center; }
+            section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data .gender-user-wrapper .user-gender-percent span {
+              color: #0e7ab2;
+              font-family: 'Gotham-Book';
+              font-size: 30px;
+              font-weight: 800; }
+    section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper {
+      margin: 20px 7px 0 7px; }
+      section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .reporting-age-title {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        background-color: #f7f7f7; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .reporting-age-title span {
+          color: #676767;
+          font-family: 'Gotham-Book';
+          font-size: 24px;
+          font-weight: 800; }
+      section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data {
+        display: flex;
+        border-bottom: 1px solid #dcdcdc;
+        padding-bottom: 10px; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper {
+          width: 20%;
+          height: 72px;
+          display: flex;
+          justify-content: space-around;
+          border-right: 1px solid #dcdcdc; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper:last-child {
+            border-right: none; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper .user-age span {
+            color: #676767;
+            font-family: 'Gotham-Book';
+            font-size: 20px;
+            font-weight: 300; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper .user-percent {
+            display: flex;
+            align-items: center; }
+            section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper .user-percent span {
+              color: #0e7ab2;
+              font-family: 'Gotham-Book';
+              font-size: 30px;
+              font-weight: 800; }
+    section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers {
+      margin: 20px 7px 0 7px; }
+      section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .reporting-placement-title {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        background-color: #f7f7f7; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .reporting-placement-title span {
+          color: #676767;
+          font-family: 'Gotham-Book';
+          font-size: 24px;
+          font-weight: 800; }
+      section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data {
+        display: flex;
+        border-bottom: 1px solid #dcdcdc;
+        padding-bottom: 10px; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper {
+          width: 20%;
+          height: 72px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          border-right: 1px solid #dcdcdc; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper:last-child {
+            border-right: none; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content {
+            display: flex;
+            justify-content: space-around; }
+            section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content .user-placement-img {
+              height: 46px;
+              display: flex;
+              align-items: center; }
+
+section.reporting-setting {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.reporting-setting .reporting-setting-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px; }
+    section.reporting-setting .reporting-setting-wrapper .reporting-title-select {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 20px; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-title-select .reporting-setting-title h3 {
+        color: #676767;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-weight: 600; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-title-select .reporting-setting-select {
+        display: flex;
+        align-items: center; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-title-select .reporting-setting-select span {
+          color: #676767;
+          font-family: "Open Sans";
+          font-size: 24px;
+          font-weight: 600; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-title-select .reporting-setting-select select.m-select {
+          color: #b8b8b8;
+          border: 1px solid #b0b0b0;
+          border-radius: 7px;
+          font-family: 'Gotham-Book';
+          font-size: 18px;
+          font-weight: 300;
+          margin-left: 20px;
+          padding: 0 50px 0 15px; }
+    @media (max-width: 991px) {
+      section.reporting-setting .reporting-setting-wrapper .reporting-setting-table {
+        overflow-x: scroll; } }
+    section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table {
+      width: 100%; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr:nth-child(even) {
+        background-color: #F7F7F7; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr:nth-child(odd) {
+        background-color: #fcfcfc; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr th {
+        color: #676767;
+        height: 50px;
+        text-align: center;
+        font-family: 'Gotham-Book';
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr td {
+        color: #676767;
+        height: 59px;
+        border: 1px solid #dcdcdc;
+        text-align: center;
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        font-weight: 300; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr td .wrap {
+          position: relative;
+          float: left; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr td .wrap label {
+            margin-top: 10px;
+            margin-left: 15px; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr td .wrap input {
+            position: absolute;
+            left: -9999px; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr td .wrap .slider-v3 {
+            position: relative;
+            display: block;
+            width: 70px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 1.5em;
+            transition: 350ms;
+            background: #ffffff;
+            border: 2px solid #074370;
+            -webkit-box-shadow: inset 0px 4px 4px 0px #aeaeae;
+            -moz-box-shadow: inset 0px 4px 4px 0px #aeaeae;
+            box-shadow: inset 0px 4px 4px 0px #aeaeae; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr td .wrap .slider-v3::after {
+            position: absolute;
+            content: '';
+            width: 21px;
+            height: 21px;
+            top: 5px;
+            left: 6px;
+            border-radius: 1.5em;
+            transition: width 200ms ease-out, height 300ms 50ms ease-in, top 300ms 50ms ease-in, left 250ms 50ms ease-in, background 300ms ease-in, box-shadow 300ms ease-in;
+            border: 2px solid #074370;
+            background-color: #aeaeae;
+            box-shadow: -1.9px 7px 0 -5px #ffffff inset; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-setting-table table tr td .wrap input:checked + .slider-v3::after {
+            width: 21px;
+            height: 21px;
+            top: 5px;
+            left: 39px;
+            background: #75b600;
+            box-shadow: -1.9px 7px 0 -5px #ffffff inset; }
+    section.reporting-setting .reporting-setting-wrapper .reporting-table-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper {
+        display: flex;
+        align-items: center; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper a {
+          margin-right: 25px; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper a.table-nav-circle {
+          color: #757575;
+          background-color: #dcdcdc;
+          display: inline-flex;
+          width: 36px;
+          height: 36px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 16px;
+          margin-right: 15px; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper a {
+          color: #676767;
+          font-family: 'Open Sans'; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper a i {
+            font-style: normal; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper a.nav-pagination-active {
+          color: #ffffff;
+          background-color: #757575;
+          display: inline-flex;
+          width: 36px;
+          height: 36px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 16px; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper a.nav-pagination-active i {
+            font-family: 'Open Sans'; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper .nav-pagination-dots {
+          display: flex;
+          align-items: center; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-pagination-wrapper .nav-pagination-dots i {
+            font-size: 5px;
+            margin: 2px; }
+      section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-setting-pagination-wrapper {
+        display: flex;
+        align-items: center; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-setting-pagination-wrapper .table-nav-select {
+          margin-left: 30px; }
+          section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-setting-pagination-wrapper .table-nav-select select {
+            color: #ffffff;
+            background-color: #868686;
+            border-radius: 30px;
+            font-family: 'Gotham-Book';
+            font-size: 20px;
+            font-weight: 300;
+            outline: none;
+            margin-right: 30px;
+            padding: 2px 30px;
+            background-image: url("../../app/img/content/arrow-down1.png");
+            background-repeat: no-repeat;
+            background-size: 30px 30px;
+            background-position: 85% 0%;
+            cursor: pointer;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: ''; }
+        section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-setting-pagination-wrapper .table-nav-info span {
+          color: #676767;
+          font-family: 'Gotham-Book';
+          font-size: 18px;
+          font-weight: 300; }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   z-index: 2;

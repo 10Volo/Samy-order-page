@@ -147,7 +147,7 @@ header {
 section.what-would-you-like {
   position: relative;
   top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   .like-title {
     font-family: 'Gotham-Book';
     text-align: center;
@@ -239,7 +239,7 @@ section.what-would-you-like {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   z-index: 2;
