@@ -165,6 +165,14 @@ select.m-select {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: ''; }
+  @media (max-width: 1024px) {
+    select.m-select {
+      width: 190px;
+      height: 45px;
+      padding: 0 20px; } }
+  @media (max-width: 375px) {
+    select.m-select {
+      background-position: 112% 50%; } }
 
 .star {
   color: #fbd000;
@@ -543,6 +551,14 @@ select.m-select {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: ''; }
+  @media (max-width: 1024px) {
+    select.m-select {
+      width: 190px;
+      height: 45px;
+      padding: 0 20px; } }
+  @media (max-width: 375px) {
+    select.m-select {
+      background-position: 112% 50%; } }
 
 .star {
   color: #fbd000;

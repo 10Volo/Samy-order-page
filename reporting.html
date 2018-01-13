@@ -11,9 +11,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
 	      rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link rel="stylesheet" href="app/css/reporting.css">
 	<!--for date picker-->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="app/css/reporting.css">
 	<!--for datepicker-->
 	<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
 	<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
@@ -95,7 +95,7 @@
 	<div class="container">
 		<div class="reporting-spent-wrapper">
 			<div class="row">
-				<div class="col-sm-4 padding0">
+				<div class="col-12 col-sm-4 col-md-4 padding0">
 					<div class="spent-items-wrapper">
 						<div class="spent-info-wrapper">
 							<div class="spent-title-wrapper"><h4>Total Spent</h4></div>
@@ -118,7 +118,7 @@
 						<div class="spent-price-wrapper"><span>$1.342</span></div>
 					</div>
 				</div>
-				<div class="col-sm-4 padding0">
+				<div class="col-12 col-sm-4 col-md-4 padding0">
 					<div class="spent-items-wrapper">
 						<div class="spent-info-wrapper">
 							<div class="spent-title-wrapper"><h4>Clicks</h4></div>
@@ -141,7 +141,7 @@
 						<div class="spent-price-wrapper"><span>1.34%</span></div>
 					</div>
 				</div>
-				<div class="col-sm-4 padding0">
+				<div class="col-12 col-sm-4 col-md-4 padding0">
 					<div class="spent-items-wrapper">
 						<div class="spent-info-wrapper">
 							<div class="spent-title-wrapper"><h4>Ad Engagement</h4></div>
@@ -212,7 +212,7 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<div class="gender-user-wrapper line">
-												<div class="user-gender-title"><h4>Men</h4></div>
+												<div class="user-gender-title" style="margin-right: 28px"><h4>Men</h4></div>
 												<div class="user-gender-avatar"><img src="app/img/content/men.png"
 												                                     alt=""></div>
 												<div class="user-gender-percent"><span>1231</span></div>
@@ -570,23 +570,38 @@
 					</select>
 				</div>
 			</div>
-			<div class="table-title">
-				<ul>
-					<li>STATUS</li>
-					<li>CAMPAIGN NAME</li>
-					<li>CLICKS</li>
-					<li>CONVERSIONS</li>
-					<li>ENGAGEMENT</li>
-					<li>PAGE LIKES</li>
-					<li>CTR</li>
-					<li>IMPRESSIONS</li>
-				</ul>
-			</div>
-			<div class="reporting-setting-table">
-				<table>
+			<div class="table-wrapper">
+				<table width="1055">
+					<thead>
+					<tr>
+						<td width="106px">STATUS</td>
+						<td width="270px">CAMPAIGN NAME</td>
+						<td width="140px">CLICKS</td>
+						<td width="140px">CONVERSIONS</td>
+						<td width="135px">ENGAGEMENT</td>
+						<td width="85px">PAGE LIKES</td>
+						<td width="80px">CTR</td>
+						<td width="94px">IMPRESSIONS</td>
+					</tr>
+					</thead>
 					<tbody>
 					<tr>
-						<td>
+						<td width="100px">
+							<div class="wrap">
+								<input type="checkbox" id="reportingSwitch1" checked=""/>
+								<label class="slider-v3" for="reportingSwitch1"></label>
+							</div>
+						</td>
+						<td width="290">Post: “Check out our newest..”</td>
+						<td width="140">3,321 @ 0.32</td>
+						<td width="140">3,321 @ 0.32</td>
+						<td width="140">3,321 @ 0.32</td>
+						<td>%3.55</td>
+						<td>%3.55</td>
+						<td>100,124</td>
+					</tr>
+					<tr>
+						<td width="100px">
 							<div class="wrap">
 								<input type="checkbox" id="reportingSwitch1" checked=""/>
 								<label class="slider-v3" for="reportingSwitch1"></label>
@@ -601,10 +616,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch2" checked=""/>
-								<label class="slider-v3" for="reportingSwitch2"></label>
+								<input type="checkbox" id="reportingSwitch1" checked=""/>
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -616,10 +631,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch3"/>
-								<label class="slider-v3" for="reportingSwitch3"></label>
+								<input type="checkbox" id="reportingSwitch1" />
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -631,10 +646,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch4"/>
-								<label class="slider-v3" for="reportingSwitch4"></label>
+								<input type="checkbox" id="reportingSwitch1" />
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -646,10 +661,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch5"/>
-								<label class="slider-v3" for="reportingSwitch5"></label>
+								<input type="checkbox" id="reportingSwitch1" />
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -661,10 +676,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch6"/>
-								<label class="slider-v3" for="reportingSwitch6"></label>
+								<input type="checkbox" id="reportingSwitch1" />
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -676,10 +691,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch7"/>
-								<label class="slider-v3" for="reportingSwitch7"></label>
+								<input type="checkbox" id="reportingSwitch1"/>
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -691,10 +706,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch8"/>
-								<label class="slider-v3" for="reportingSwitch8"></label>
+								<input type="checkbox" id="reportingSwitch1"/>
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -706,10 +721,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch9"/>
-								<label class="slider-v3" for="reportingSwitch9"></label>
+								<input type="checkbox" id="reportingSwitch1"/>
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -721,10 +736,10 @@
 						<td>100,124</td>
 					</tr>
 					<tr>
-						<td>
+						<td width="100px">
 							<div class="wrap">
-								<input type="checkbox" id="reportingSwitch10"/>
-								<label class="slider-v3" for="reportingSwitch10"></label>
+								<input type="checkbox" id="reportingSwitch1"/>
+								<label class="slider-v3" for="reportingSwitch1"></label>
 							</div>
 						</td>
 						<td>Post: “Check out our newest..”</td>
@@ -734,22 +749,8 @@
 						<td>%3.55</td>
 						<td>%3.55</td>
 						<td>100,124</td>
-					</tr>
-					<tr>
-						<td>STATUS</td>
-						<td>CAMPAIGN NAME</td>
-						<td>CLICKS</td>
-						<td>CONVERSIONS</td>
-						<td>ENGAGEMENT</td>
-						<td>PAGE LIKES</td>
-						<td>CTR</td>
-						<td>IMPRESSIONS</td>
 					</tr>
 					</tbody>
-					
-					
-					
-				
 				</table>
 			</div>
 			<div class="reporting-table-nav">
@@ -782,7 +783,6 @@
 		</div>
 	</div>
 </section>
-
 <footer>
 	<div class="container">
 		<div class="footer-wrapper">
