@@ -1581,6 +1581,9 @@ section.reporting-setting {
           font-family: 'Gotham-Book';
           font-size: 18px;
           font-weight: 300; }
+          @media (max-width: 960px) {
+            section.reporting-setting .reporting-setting-wrapper .reporting-table-nav .table-setting-pagination-wrapper .table-nav-info span {
+              font-size: 13px; } }
 
 footer {
   position: relative;
