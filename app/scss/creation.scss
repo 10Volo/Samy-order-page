@@ -986,6 +986,7 @@ footer {
 .questions > .question {
   position: relative;
   opacity: .2;
+  //pointer-events: none;
   display: none;
   //.line-100 {
   //  background-color: red;
@@ -998,6 +999,7 @@ footer {
   &.focus {
     cursor: default;
     opacity: 1;
+    //pointer-events: auto;
     //.line-100 {
     //  background-color: blue;
     //  opacity: 1 !important;

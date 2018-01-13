@@ -48,6 +48,23 @@ $(function () { // wait for document ready
 	checkBlock();
 	runScene(1);
 
+	// $('.content-left-wrapper').bind('DOMMouseScroll mousewheel MozMousePixelScroll', function(e) {
+	// 	var scrollTo = 0;
+	//
+	// 	if (e.type == 'mousewheel') {
+	// 		scrollTo = (e.originalEvent.wheelDelta * -1);
+	// 	}
+	// 	else if (e.type == 'DOMMouseScroll') {
+	// 		// scrollTo = 20 * e.originalEvent.detail; // turns out, this sometimes works better as expected...
+	// 		scrollTo = e.originalEvent.detail;
+	// 	}
+	//
+	// 	if (scrollTo > 0) {
+	// 		e.preventDefault();
+	// 		return false;
+	// 	}
+	// });
+
 	// SCROLL
 	function checkBlock() {
 		$('.questions .question.is-block').each(function () {
@@ -70,12 +87,39 @@ $(function () { // wait for document ready
 	$('input').keypress(function(event) {
 		if(event.which === 13) {
 			runNext();
+
+			var parent = $(this).closest('.question')[0];
+			scrollNext(parent);
 		}
 	});
 
 	$('.on-enter').on('click', function () {
+		console.log($(this).closest('.question')[0]);
 		runNext();
+
+		var parent = $(this).closest('.question')[0];
+		scrollNext(parent);
 	});
+
+	function scrollNext(element) {
+		console.log(element);
+		var $this = $(element),
+			strId = $this.attr('id'),
+			lastNum = parseInt(strId.length === 9 ? strId.substr(strId.length - 1) : strId.substr(strId.length - 2)),
+			nextNum = parseInt(lastNum) + 1;
+
+		var myContainer = $('.content-left-wrapper');
+		var scrollTo = $(element);
+		myContainer.animate({
+			scrollTop: scrollTo.offset().top - myContainer.offset().top + myContainer.scrollTop()
+		});
+
+		setTimeout(function () {
+			$('#question' + nextNum).find('input').focus();
+		}, 900);
+
+		return false;
+	}
 
 	function runNext() {
 		event.preventDefault();
@@ -88,7 +132,7 @@ $(function () { // wait for document ready
 
 		if(findElementNext) {
 			findElementNext.addClass('is-block');
-			new ScrollMagic.Scene({triggerElement: '#' + findElementNext.attr('id'), duration: findElementNext.height()})
+			var scene = new ScrollMagic.Scene({triggerElement: '#' + findElementNext.attr('id'), duration: findElementNext.height()})
 				.on("enter", function () {
 					// trigger animation by changing inline style.
 					TweenMax.to('#' + findElementNext.attr('id'), 1, {className:"+=focus"});
@@ -97,8 +141,10 @@ $(function () { // wait for document ready
 					// reset style
 					TweenMax.to('#' + findElementNext.attr('id'), 1, {className:"-=focus"});
 				})
-				// .addIndicators()
-				.addTo(controller)
+				.addIndicators()
+				.addTo(controller);
+
+			scene.triggerHook("0.8");
 		}
 
 		switch (lastNum) {
