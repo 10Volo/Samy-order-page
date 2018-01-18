@@ -481,7 +481,7 @@ section.reporting-stat {
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
-		border-bottom: 1px solid #dcdcdc;
+		//border-bottom: 1px solid #dcdcdc;
 		padding-bottom: 20px;
 		.choose-data-title {
 		  h3 {
@@ -536,6 +536,7 @@ section.reporting-stat {
 	  }
 	}
 	.leads-wrapper {
+	  border-top: 1px solid #dcdcdc;
 	  ul {
 		display: flex;
 		justify-content: space-between;
@@ -640,6 +641,9 @@ section.reporting-stat {
 		  display: flex;
 		  justify-content: space-around;
 		  margin-left: 10px;
+		  @media (max-width: 320px) {
+			margin-bottom: 5px;
+		  }
 		  .user-gender-title {
 			h4 {
 			  color: #676767;
@@ -743,6 +747,7 @@ section.reporting-stat {
 			  }
 			  @media (max-width: 320px){
 				font-size: 12px;
+				font-weight: 600;
 			  }
 			}
 		  }
@@ -762,6 +767,9 @@ section.reporting-stat {
 			  }
 			  @media (max-width: 375px){
 				font-size: 15px;
+			  }
+			  @media (max-width: 320px){
+				font-size: 13px;
 			  }
 			}
 		  }
@@ -811,6 +819,9 @@ section.reporting-stat {
 		  @media (max-width: 960px){
 			height: 41px;
 		  }
+		  @media (max-width: 320px){
+			height: 55px;
+		  }
 		  &:last-child {
 			border-right: none;
 		  }
@@ -832,8 +843,26 @@ section.reporting-stat {
 				font-weight: 700;
 			  }
 			  @media (max-width: 767px){
-				font-size: 10px;
+				font-size: 12px;
 				font-weight: 700;
+			  }
+			  @media (max-width: 320px) {
+				font-size: 11px;
+				line-height: 1.3;
+				text-align: center !important;
+			  }
+			}
+			span.insta-hidden-trick {
+			  display: block;
+			  @media (max-width: 320px) {
+				display: none;
+			  }
+			}
+			span.insta-show-trick {
+			  display: none;
+			  @media (max-width: 320px) {
+				display: inline;
+				margin-left: 5px;
 			  }
 			}
 		  }
@@ -842,6 +871,9 @@ section.reporting-stat {
 			justify-content: space-around;
 			@media (max-width: 960px){
 			  align-items: center;
+			}
+			@media (max-width: 320px){
+			  justify-content: center;
 			}
 			.user-placement-img {
 			  height: 46px;
@@ -875,6 +907,9 @@ section.reporting-stat {
 				@media (max-width: 767px){
 				  font-size: 15px;
 				}
+				@media (max-width: 320px){
+				  font-size: 13px;
+				}
 			  }
 			}
 		  }
@@ -898,20 +933,24 @@ section.reporting-stat {
 		  width: 120px;
 		  height: 35px;
 		}
-		img {
-		  width: auto;
-		  height: 25px;
-		  @media (max-width: 767px) {
+		button {
+		  background-color: #ffffff;
+		  border: 0;
+		  img {
 			width: auto;
-			height: 20px;
+			height: 25px;
+			@media (max-width: 767px) {
+			  width: auto;
+			  height: 20px;
 
+			}
 		  }
-		}
-		img:first-child {
-		  margin-left: 10px;
-		}
-		img:last-child {
-		  margin-right: 10px;
+		  img:first-child {
+			margin-left: 10px;
+		  }
+		  img:last-child {
+			margin-right: 10px;
+		  }
 		}
 		span {
 		  background-color: #dcdcdc;
@@ -921,6 +960,9 @@ section.reporting-stat {
 	  }
 	}
   }
+}
+section#reporting-next-section {
+  display: none;
 }
 
 section.reporting-setting {

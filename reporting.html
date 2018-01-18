@@ -176,9 +176,9 @@
 				<div class="choose-data-select-wrapper">
 					<div class="choose-data-title"><h3>What Data Would You Like To Focus On</h3></div>
 					<div class="select-img">
-						<select name="" class="m-select">
+						<select id="test" name="form_select" class="m-select">
 							<option value="" selected="selected" disabled="disabled">Choose Data</option>
-							<option value="">Item #1</option>
+							<option value ="1" onClick"showDiv()">Item #1</option>
 							<option value="">Item #2</option>
 							<option value="">Item #3</option>
 							<option value="">Item #4</option>
@@ -188,42 +188,126 @@
 			</div>
 			
 			
-			<!-- Nav tabs -->
-			<div class="leads-wrapper">
-				<ul role="tablist">
-					<li class="leads nav-item"><a class=" active" data-toggle="tab" href="#home" role="tab"><span
-							class="leads-price">2,332</span><span class="leads-title">Total Leads</span></a></li>
-					<li class="leads nav-item"><a class="" data-toggle="tab" href="#profile" role="tab"><span
-							class="leads-price">$1.23</span><span class="leads-title">Per Leads</span></a></li>
-					<li class="leads nav-item"><a class="" data-toggle="tab" href="#messages" role="tab"><span
-							class="leads-price">2.23%</span><span class="leads-title">Lead Rate</span></a></li>
-				</ul>
-			</div>
-			<!-- Tab panes -->
-			<div class="tab-content">
-				<div class="tab-pane active" id="home" role="tabpanel">
-					<div class="reporting-users-wrapper">
-						<div class="row">
-							<div class="col-sm-12 col-md-2">
-								<div class="reporting-user-title"><span>GENDER</span></div>
-							</div>
-							<div class="col-sm-12 col-md-10">
-								<div class="user-gender-data">
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="gender-user-wrapper line">
-												<div class="user-gender-title" style="margin-right: 28px"><h4>Men</h4></div>
-												<div class="user-gender-avatar"><img src="app/img/content/men.png"
-												                                     alt=""></div>
-												<div class="user-gender-percent"><span>1231</span></div>
+			<div id="hidden_div" style="display: none">
+				<!-- Nav tabs -->
+				<div class="leads-wrapper">
+					<ul role="tablist">
+						<li class="leads nav-item"><a class=" active" data-toggle="tab" href="#home" role="tab"><span
+								class="leads-price">2,332</span><span class="leads-title">Total Leads</span></a></li>
+						<li class="leads nav-item"><a class="" data-toggle="tab" href="#profile" role="tab"><span
+								class="leads-price">$1.23</span><span class="leads-title">Per Leads</span></a></li>
+						<li class="leads nav-item"><a class="" data-toggle="tab" href="#messages" role="tab"><span
+								class="leads-price">2.23%</span><span class="leads-title">Lead Rate</span></a></li>
+					</ul>
+				</div>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="home" role="tabpanel">
+						<div class="reporting-users-wrapper">
+							<div class="row">
+								<div class="col-sm-12 col-md-2">
+									<div class="reporting-user-title"><span>GENDER</span></div>
+								</div>
+								<div class="col-sm-12 col-md-10">
+									<div class="user-gender-data">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper line">
+													<div class="user-gender-title" style="margin-right: 28px"><h4>Men</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/men.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>1231</span></div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper">
+													<div class="user-gender-title"><h4>Women</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/women.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>1231</span></div>
+												</div>
 											</div>
 										</div>
-										<div class="col-sm-6">
-											<div class="gender-user-wrapper">
-												<div class="user-gender-title"><h4>Women</h4></div>
-												<div class="user-gender-avatar"><img src="app/img/content/women.png"
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-age-wrapper">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-age-title"><span>AGE</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-age-data">
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>18 - 24</span></div>
+											<div class="user-percent"><span>250</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>25 - 34</span></div>
+											<div class="user-percent"><span>210</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>35 - 44</span></div>
+											<div class="user-percent"><span>67</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>45 - 54</span></div>
+											<div class="user-percent"><span>21</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>55+</span></div>
+											<div class="user-percent"><span>6</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-placement-wrappers">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-placement-title"><span>PLACEMENT</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-placement-data">
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
 												                                     alt=""></div>
-												<div class="user-gender-percent"><span>1231</span></div>
+												<div class="user-placement-percent"><span>655</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Mobile Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/mobile.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>380</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span class="insta-hidden-trick">Instagram</span><span class="insta-show-trick">Insta</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/istagram.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>5</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Side</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>275</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Audience Network</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/audience.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>1123</span></div>
 											</div>
 										</div>
 									</div>
@@ -231,82 +315,226 @@
 							</div>
 						</div>
 					</div>
-					<div class="reporting-users-age-wrapper">
-						<div class="row">
-							<div class="col-md-2">
-								<div class="reporting-age-title"><span>AGE</span></div>
+					<div class="tab-pane" id="profile" role="tabpanel">
+						<div class="reporting-users-wrapper">
+							<div class="row">
+								<div class="col-sm-12 col-md-2">
+									<div class="reporting-user-title"><span>GENDER</span></div>
+								</div>
+								<div class="col-sm-12 col-md-10">
+									<div class="user-gender-data">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper line">
+													<div class="user-gender-title"><h4>Men</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/men.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>$23.2</span></div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper">
+													<div class="user-gender-title"><h4>Women</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/women.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>$23.4</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-10">
-								<div class="user-age-data">
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>18 - 24</span></div>
-										<div class="user-percent"><span>250</span></div>
+						</div>
+						<div class="reporting-users-age-wrapper">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-age-title"><span>AGE</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-age-data">
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>18 - 24</span></div>
+											<div class="user-percent"><span>$10.2</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>25 - 34</span></div>
+											<div class="user-percent"><span>$7.3</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>35 - 44</span></div>
+											<div class="user-percent"><span>$5.2</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>45 - 54</span></div>
+											<div class="user-percent"><span>$3.1</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>55 - 64+</span></div>
+											<div class="user-percent"><span>$0.2</span></div>
+										</div>
 									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>25 - 34</span></div>
-										<div class="user-percent"><span>210</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>35 - 44</span></div>
-										<div class="user-percent"><span>67</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>45 - 54</span></div>
-										<div class="user-percent"><span>21</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>55 - 64+</span></div>
-										<div class="user-percent"><span>6</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-placement-wrappers">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-placement-title"><span>PLACEMENT</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-placement-data">
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$23.7</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Mobile Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/mobile.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$18</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Instagram</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/istagram.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$0.01</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Side</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$3.41</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Audience Network</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/audience.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$35.61</span></div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="reporting-users-placement-wrappers">
-						<div class="row">
-							<div class="col-md-2">
-								<div class="reporting-placement-title"><span>PLACEMENT</span></div>
+					<div class="tab-pane" id="messages" role="tabpanel">
+						<div class="reporting-users-wrapper">
+							<div class="row">
+								<div class="col-sm-12 col-md-2">
+									<div class="reporting-user-title"><span>GENDER</span></div>
+								</div>
+								<div class="col-sm-12 col-md-10">
+									<div class="user-gender-data">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper line">
+													<div class="user-gender-title"><h4>Men</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/men.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>82.4%</span></div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper">
+													<div class="user-gender-title"><h4>Women</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/women.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>82.4%</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-10">
-								<div class="user-placement-data">
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Desktop Feed</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/desktop.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>655</span></div>
+						</div>
+						<div class="reporting-users-age-wrapper">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-age-title"><span>AGE</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-age-data">
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>18 - 24</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>25 - 34</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>35 - 44</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>45 - 54</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>55 - 64+</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
 										</div>
 									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Mobile Feed</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/mobile.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>380</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-placement-wrappers">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-placement-title"><span>PLACEMENT</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-placement-data">
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
 										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Instagram</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/istagram.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>5</span></div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Mobile Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/mobile.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
 										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Desktop Side</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/desktop.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>275</span></div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Instagram</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/istagram.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
 										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Audience Network</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/audience.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>1123</span></div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Side</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Audience Network</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/audience.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -314,243 +542,458 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane" id="profile" role="tabpanel">
-					<div class="reporting-users-wrapper">
-						<div class="row">
-							<div class="col-sm-12 col-md-2">
-								<div class="reporting-user-title"><span>GENDER</span></div>
-							</div>
-							<div class="col-sm-12 col-md-10">
-								<div class="user-gender-data">
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="gender-user-wrapper line">
-												<div class="user-gender-title"><h4>Men</h4></div>
-												<div class="user-gender-avatar"><img src="app/img/content/men.png"
-												                                     alt=""></div>
-												<div class="user-gender-percent"><span>$23.2</span></div>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="gender-user-wrapper">
-												<div class="user-gender-title"><h4>Women</h4></div>
-												<div class="user-gender-avatar"><img src="app/img/content/women.png"
-												                                     alt=""></div>
-												<div class="user-gender-percent"><span>$23.4</span></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="reporting-nav-placement-wrappers">
+					<div class="reporting-nav-button">
+						<button class="btn-hide-reporting">
+							<img src="app/img/content/plus.png" alt="">
+						</button>
+						<span></span>
+						<button class="btn-show-reporting">
+							<img src="app/img/content/del.png" alt="">
+						</button>
 					</div>
-					<div class="reporting-users-age-wrapper">
-						<div class="row">
-							<div class="col-md-2">
-								<div class="reporting-age-title"><span>AGE</span></div>
-							</div>
-							<div class="col-md-10">
-								<div class="user-age-data">
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>18 - 24</span></div>
-										<div class="user-percent"><span>$10.2</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>25 - 34</span></div>
-										<div class="user-percent"><span>$7.3</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>35 - 44</span></div>
-										<div class="user-percent"><span>$5.2</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>45 - 54</span></div>
-										<div class="user-percent"><span>$3.1</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>55 - 64+</span></div>
-										<div class="user-percent"><span>$0.2</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="reporting-users-placement-wrappers">
-						<div class="row">
-							<div class="col-md-2">
-								<div class="reporting-placement-title"><span>PLACEMENT</span></div>
-							</div>
-							<div class="col-md-10">
-								<div class="user-placement-data">
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Desktop Feed</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/desktop.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>$23.7</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Mobile Feed</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/mobile.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>$18</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Instagram</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/istagram.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>$0.01</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Desktop Side</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/desktop.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>$3.41</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Audience Network</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/audience.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>$35.61</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane" id="messages" role="tabpanel">
-					<div class="reporting-users-wrapper">
-						<div class="row">
-							<div class="col-sm-12 col-md-2">
-								<div class="reporting-user-title"><span>GENDER</span></div>
-							</div>
-							<div class="col-sm-12 col-md-10">
-								<div class="user-gender-data">
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="gender-user-wrapper line">
-												<div class="user-gender-title"><h4>Men</h4></div>
-												<div class="user-gender-avatar"><img src="app/img/content/men.png"
-												                                     alt=""></div>
-												<div class="user-gender-percent"><span>82.4%</span></div>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="gender-user-wrapper">
-												<div class="user-gender-title"><h4>Women</h4></div>
-												<div class="user-gender-avatar"><img src="app/img/content/women.png"
-												                                     alt=""></div>
-												<div class="user-gender-percent"><span>82.4%</span></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="reporting-users-age-wrapper">
-						<div class="row">
-							<div class="col-md-2">
-								<div class="reporting-age-title"><span>AGE</span></div>
-							</div>
-							<div class="col-md-10">
-								<div class="user-age-data">
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>18 - 24</span></div>
-										<div class="user-percent"><span>82.4%</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>25 - 34</span></div>
-										<div class="user-percent"><span>82.4%</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>35 - 44</span></div>
-										<div class="user-percent"><span>82.4%</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>45 - 54</span></div>
-										<div class="user-percent"><span>82.4%</span></div>
-									</div>
-									<div class="user-age-wrapper">
-										<div class="user-age"><span>55 - 64+</span></div>
-										<div class="user-percent"><span>82.4%</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="reporting-users-placement-wrappers">
-						<div class="row">
-							<div class="col-md-2">
-								<div class="reporting-placement-title"><span>PLACEMENT</span></div>
-							</div>
-							<div class="col-md-10">
-								<div class="user-placement-data">
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Desktop Feed</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/desktop.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>82.4%</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Mobile Feed</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/mobile.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>82.4%</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Instagram</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/istagram.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>82.4%</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Desktop Side</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/desktop.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>82.4%</span></div>
-										</div>
-									</div>
-									<div class="user-placement-wrapper">
-										<div class="user-placement-title"><span>Audience Network</span></div>
-										<div class="user-placement-content">
-											<div class="user-placement-img"><img src="app/img/content/audience.png"
-											                                     alt=""></div>
-											<div class="user-placement-percent"><span>82.4%</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="reporting-nav-placement-wrappers">
-				<div class="reporting-nav-button">
-					<img src="app/img/content/plus.png" alt="">
-					<span></span>
-					<img src="app/img/content/del.png" alt="">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+
+<section id="reporting-next-section" class="reporting-stat">
+	<div class="container">
+		<div class="reporting-stat-wrapper">
+			<div class="stat-choose-data-wrapper">
+				<div class="choose-data-select-wrapper">
+					<div class="choose-data-title"><h3>What Data Would You Like To Focus On</h3></div>
+					<div class="select-img">
+						<select id="test2" name="form_select" class="m-select">
+							<option value="" selected="selected" disabled="disabled">Choose Data</option>
+							<option value ="1" onClick"showDiv()">Item #1</option>
+							<option value="">Item #2</option>
+							<option value="">Item #3</option>
+							<option value="">Item #4</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="hidden_div2" style="display: none">
+				<!-- Nav tabs -->
+				<div class="leads-wrapper">
+					<ul role="tablist">
+						<li class="leads nav-item"><a class=" active" data-toggle="tab" href="#home" role="tab"><span
+								class="leads-price">2,332</span><span class="leads-title">Total Leads</span></a></li>
+						<li class="leads nav-item"><a class="" data-toggle="tab" href="#profile" role="tab"><span
+								class="leads-price">$1.23</span><span class="leads-title">Per Leads</span></a></li>
+						<li class="leads nav-item"><a class="" data-toggle="tab" href="#messages" role="tab"><span
+								class="leads-price">2.23%</span><span class="leads-title">Lead Rate</span></a></li>
+					</ul>
+				</div>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="home" role="tabpanel">
+						<div class="reporting-users-wrapper">
+							<div class="row">
+								<div class="col-sm-12 col-md-2">
+									<div class="reporting-user-title"><span>GENDER</span></div>
+								</div>
+								<div class="col-sm-12 col-md-10">
+									<div class="user-gender-data">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper line">
+													<div class="user-gender-title" style="margin-right: 28px"><h4>Men</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/men.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>1231</span></div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper">
+													<div class="user-gender-title"><h4>Women</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/women.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>1231</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-age-wrapper">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-age-title"><span>AGE</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-age-data">
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>18 - 24</span></div>
+											<div class="user-percent"><span>250</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>25 - 34</span></div>
+											<div class="user-percent"><span>210</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>35 - 44</span></div>
+											<div class="user-percent"><span>67</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>45 - 54</span></div>
+											<div class="user-percent"><span>21</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>55+</span></div>
+											<div class="user-percent"><span>6</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-placement-wrappers">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-placement-title"><span>PLACEMENT</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-placement-data">
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>655</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Mobile Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/mobile.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>380</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span class="insta-hidden-trick">Instagram</span><span class="insta-show-trick">Insta</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/istagram.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>5</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Side</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>275</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Audience Network</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/audience.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>1123</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="profile" role="tabpanel">
+						<div class="reporting-users-wrapper">
+							<div class="row">
+								<div class="col-sm-12 col-md-2">
+									<div class="reporting-user-title"><span>GENDER</span></div>
+								</div>
+								<div class="col-sm-12 col-md-10">
+									<div class="user-gender-data">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper line">
+													<div class="user-gender-title"><h4>Men</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/men.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>$23.2</span></div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper">
+													<div class="user-gender-title"><h4>Women</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/women.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>$23.4</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-age-wrapper">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-age-title"><span>AGE</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-age-data">
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>18 - 24</span></div>
+											<div class="user-percent"><span>$10.2</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>25 - 34</span></div>
+											<div class="user-percent"><span>$7.3</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>35 - 44</span></div>
+											<div class="user-percent"><span>$5.2</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>45 - 54</span></div>
+											<div class="user-percent"><span>$3.1</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>55 - 64+</span></div>
+											<div class="user-percent"><span>$0.2</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-placement-wrappers">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-placement-title"><span>PLACEMENT</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-placement-data">
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$23.7</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Mobile Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/mobile.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$18</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Instagram</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/istagram.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$0.01</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Side</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$3.41</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Audience Network</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/audience.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>$35.61</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="messages" role="tabpanel">
+						<div class="reporting-users-wrapper">
+							<div class="row">
+								<div class="col-sm-12 col-md-2">
+									<div class="reporting-user-title"><span>GENDER</span></div>
+								</div>
+								<div class="col-sm-12 col-md-10">
+									<div class="user-gender-data">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper line">
+													<div class="user-gender-title"><h4>Men</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/men.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>82.4%</span></div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="gender-user-wrapper">
+													<div class="user-gender-title"><h4>Women</h4></div>
+													<div class="user-gender-avatar"><img src="app/img/content/women.png"
+													                                     alt=""></div>
+													<div class="user-gender-percent"><span>82.4%</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-age-wrapper">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-age-title"><span>AGE</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-age-data">
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>18 - 24</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>25 - 34</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>35 - 44</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>45 - 54</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+										<div class="user-age-wrapper">
+											<div class="user-age"><span>55 - 64+</span></div>
+											<div class="user-percent"><span>82.4%</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reporting-users-placement-wrappers">
+							<div class="row">
+								<div class="col-md-2">
+									<div class="reporting-placement-title"><span>PLACEMENT</span></div>
+								</div>
+								<div class="col-md-10">
+									<div class="user-placement-data">
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Mobile Feed</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/mobile.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Instagram</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/istagram.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Desktop Side</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/desktop.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
+										</div>
+										<div class="user-placement-wrapper">
+											<div class="user-placement-title"><span>Audience Network</span></div>
+											<div class="user-placement-content">
+												<div class="user-placement-img"><img src="app/img/content/audience.png"
+												                                     alt=""></div>
+												<div class="user-placement-percent"><span>82.4%</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reporting-nav-placement-wrappers">
+					<div class="reporting-nav-button">
+						<button class="btn-hide-reporting">
+							<img src="app/img/content/plus.png" alt="">
+						</button>
+						<span></span>
+						<button class="btn-show-reporting">
+							<img src="app/img/content/del.png" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--show content from select section#2-->
+<script>
+	var select = document.getElementById('test'),
+		onChange = function(event) {
+			var shown = this.options[this.selectedIndex].value == 1;
+			
+			document.getElementById('hidden_div').style.display = shown ? 'block' : 'none';
+		};
+	
+	if (select.addEventListener) {
+		select.addEventListener('change', onChange, false);
+	} else {
+		select.attachEvent('onchange', function() {
+			onChange.apply(select, arguments);
+		});
+	}
+</script>
+<!--show content from select section#2-->
+<script>
+	var select = document.getElementById('test2'),
+		onChange = function(event) {
+			var shown = this.options[this.selectedIndex].value == 1;
+			
+			document.getElementById('hidden_div2').style.display = shown ? 'block' : 'none';
+		};
+	
+	if (select.addEventListener) {
+		select.addEventListener('change', onChange, false);
+	} else {
+		select.attachEvent('onchange', function() {
+			onChange.apply(select, arguments);
+		});
+	}
+</script>
+<!--show and hide content push the buttons-->
+<script>
+	$(document).ready(function(){
+		$(".btn-hide-reporting").click(function(){
+			$("#reporting-next-section").show();
+		});
+		$(".btn-show-reporting").click(function(){
+			$("#reporting-next-section").hide();
+		});
+		
+	});
+</script>
 
 <section class="reporting-setting">
 	<div class="container">
