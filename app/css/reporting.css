@@ -960,7 +960,6 @@ section.reporting-stat {
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      border-bottom: 1px solid #dcdcdc;
       padding-bottom: 20px; }
       section.reporting-stat .reporting-stat-wrapper .stat-choose-data-wrapper .choose-data-select-wrapper .choose-data-title h3 {
         color: #676767;
@@ -1007,54 +1006,56 @@ section.reporting-stat {
           @media (max-width: 375px) {
             section.reporting-stat .reporting-stat-wrapper .stat-choose-data-wrapper .choose-data-select-wrapper .select-img select.m-select {
               width: 80%; } }
-    section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px; }
-      section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads {
-        width: 32%;
+    section.reporting-stat .reporting-stat-wrapper .leads-wrapper {
+      border-top: 1px solid #dcdcdc; }
+      section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul {
         display: flex;
-        flex-direction: column;
-        border-radius: 7px;
-        cursor: pointer; }
-        section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a.active {
-          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
-          border-radius: 7px;
-          background-color: #f7f7f7; }
-        section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a {
+        justify-content: space-between;
+        margin-top: 20px; }
+        section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads {
+          width: 32%;
           display: flex;
           flex-direction: column;
-          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
           border-radius: 7px;
-          padding: 10px 20px; }
-          section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
-            color: #fd4747;
-            font-family: 'Gotham-Book';
-            font-size: 26px;
-            font-weight: 800; }
-            @media (max-width: 1200px) {
-              section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
-                font-size: 24px; } }
-            @media (max-width: 960px) {
-              section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
-                font-size: 20px; } }
-            @media (max-width: 375px) {
-              section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
-                font-size: 16px; } }
-          section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
-            color: #676767;
-            font-family: 'Gotham-Book';
-            font-size: 22px;
-            font-weight: 800; }
-            @media (max-width: 1200px) {
-              section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
-                font-size: 20px; } }
-            @media (max-width: 960px) {
-              section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
-                font-size: 18px; } }
-            @media (max-width: 375px) {
-              section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
-                font-size: 16px; } }
+          cursor: pointer; }
+          section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a.active {
+            box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 7px;
+            background-color: #f7f7f7; }
+          section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 7px;
+            padding: 10px 20px; }
+            section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
+              color: #fd4747;
+              font-family: 'Gotham-Book';
+              font-size: 26px;
+              font-weight: 800; }
+              @media (max-width: 1200px) {
+                section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
+                  font-size: 24px; } }
+              @media (max-width: 960px) {
+                section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
+                  font-size: 20px; } }
+              @media (max-width: 375px) {
+                section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-price {
+                  font-size: 16px; } }
+            section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
+              color: #676767;
+              font-family: 'Gotham-Book';
+              font-size: 22px;
+              font-weight: 800; }
+              @media (max-width: 1200px) {
+                section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
+                  font-size: 20px; } }
+              @media (max-width: 960px) {
+                section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
+                  font-size: 18px; } }
+              @media (max-width: 375px) {
+                section.reporting-stat .reporting-stat-wrapper .leads-wrapper ul li.leads a .leads-title {
+                  font-size: 16px; } }
     section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper {
       margin: 20px 7px 0 7px; }
       @media (max-width: 767px) {
@@ -1094,6 +1095,9 @@ section.reporting-stat {
           display: flex;
           justify-content: space-around;
           margin-left: 10px; }
+          @media (max-width: 320px) {
+            section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data .gender-user-wrapper {
+              margin-bottom: 5px; } }
           section.reporting-stat .reporting-stat-wrapper .reporting-users-wrapper .user-gender-data .gender-user-wrapper .user-gender-title h4 {
             color: #676767;
             font-family: 'Gotham-Book';
@@ -1183,7 +1187,8 @@ section.reporting-stat {
                   font-size: 14px; } }
               @media (max-width: 320px) {
                 section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper .user-age span {
-                  font-size: 12px; } }
+                  font-size: 12px;
+                  font-weight: 600; } }
           section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper .user-percent {
             display: flex;
             align-items: center; }
@@ -1201,6 +1206,9 @@ section.reporting-stat {
               @media (max-width: 375px) {
                 section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper .user-percent span {
                   font-size: 15px; } }
+              @media (max-width: 320px) {
+                section.reporting-stat .reporting-stat-wrapper .reporting-users-age-wrapper .user-age-data .user-age-wrapper .user-percent span {
+                  font-size: 13px; } }
     section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers {
       margin: 20px 7px 0 7px; }
       section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .reporting-placement-title {
@@ -1242,6 +1250,9 @@ section.reporting-stat {
           @media (max-width: 960px) {
             section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper {
               height: 41px; } }
+          @media (max-width: 320px) {
+            section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper {
+              height: 55px; } }
           section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper:last-child {
             border-right: none; }
           section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title {
@@ -1263,14 +1274,33 @@ section.reporting-stat {
                   font-weight: 700; } }
               @media (max-width: 767px) {
                 section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title span {
-                  font-size: 10px;
+                  font-size: 12px;
                   font-weight: 700; } }
+              @media (max-width: 320px) {
+                section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title span {
+                  font-size: 11px;
+                  line-height: 1.3;
+                  text-align: center !important; } }
+            section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title span.insta-hidden-trick {
+              display: block; }
+              @media (max-width: 320px) {
+                section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title span.insta-hidden-trick {
+                  display: none; } }
+            section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title span.insta-show-trick {
+              display: none; }
+              @media (max-width: 320px) {
+                section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-title span.insta-show-trick {
+                  display: inline;
+                  margin-left: 5px; } }
           section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content {
             display: flex;
             justify-content: space-around; }
             @media (max-width: 960px) {
               section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content {
                 align-items: center; } }
+            @media (max-width: 320px) {
+              section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content {
+                justify-content: center; } }
             section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content .user-placement-img {
               height: 46px;
               display: flex;
@@ -1299,6 +1329,9 @@ section.reporting-stat {
               @media (max-width: 767px) {
                 section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content .user-placement-percent span {
                   font-size: 15px; } }
+              @media (max-width: 320px) {
+                section.reporting-stat .reporting-stat-wrapper .reporting-users-placement-wrappers .user-placement-data .user-placement-wrapper .user-placement-content .user-placement-percent span {
+                  font-size: 13px; } }
     section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers {
       margin-top: 20px;
       display: flex;
@@ -1316,21 +1349,27 @@ section.reporting-stat {
           section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button {
             width: 120px;
             height: 35px; } }
-        section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button img {
-          width: auto;
-          height: 25px; }
-          @media (max-width: 767px) {
-            section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button img {
-              width: auto;
-              height: 20px; } }
-        section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button img:first-child {
-          margin-left: 10px; }
-        section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button img:last-child {
-          margin-right: 10px; }
+        section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button button {
+          background-color: #ffffff;
+          border: 0; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button button img {
+            width: auto;
+            height: 25px; }
+            @media (max-width: 767px) {
+              section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button button img {
+                width: auto;
+                height: 20px; } }
+          section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button button img:first-child {
+            margin-left: 10px; }
+          section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button button img:last-child {
+            margin-right: 10px; }
         section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button span {
           background-color: #dcdcdc;
           width: 1px;
           height: 30px; }
+
+section#reporting-next-section {
+  display: none; }
 
 section.reporting-setting {
   position: relative;
