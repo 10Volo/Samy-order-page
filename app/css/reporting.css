@@ -1353,7 +1353,8 @@ section.reporting-stat {
           border: 0; }
           section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button button img {
             width: auto;
-            height: 25px; }
+            height: 25px;
+            cursor: pointer; }
             @media (max-width: 767px) {
               section.reporting-stat .reporting-stat-wrapper .reporting-nav-placement-wrappers .reporting-nav-button button img {
                 width: auto;
