@@ -202,6 +202,9 @@ select.m-select {
   @media (max-width: 375px) {
     select.m-select {
       background-position: 112% 50%; } }
+  @media (max-width: 320px) {
+    select.m-select {
+      background-position: 104% 50%; } }
 
 .star {
   color: #fbd000;

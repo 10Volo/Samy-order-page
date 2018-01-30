@@ -29,6 +29,9 @@ select.m-select {
   @media (max-width: 375px) {
 	background-position: 112% 50%;
   }
+  @media (max-width: 320px) {
+	background-position: 104% 50%;
+  }
   option {
 
   }

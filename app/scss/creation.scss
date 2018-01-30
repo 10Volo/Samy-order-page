@@ -523,6 +523,9 @@ section.content-wrapper {
 					@media (max-width: 767px) {
 					  width: 330px;
 					}
+					@media (max-width: 320px) {
+					  width: 295px;
+					}
                     .upload-btn-wrapper {
                       width: 50%;
                       height: 40px;
@@ -884,6 +887,9 @@ section.content-wrapper {
 					@media (max-width: 960px) {
 					  font-size: 14px;
 					}
+					@media (max-width: 320px) {
+					  font-size: 12px;
+					}
                   }
                 }
                 .step5-show-refresh {
@@ -904,6 +910,10 @@ section.content-wrapper {
 				  @media (max-width: 375px) {
 					width: 75px;
 				  }
+				  @media (max-width: 320px) {
+					width: 55px;
+					height: 25px;
+				  }
 				  img {
 					width: 25px;
 					margin-right: 5px;
@@ -912,6 +922,11 @@ section.content-wrapper {
 					}
 					@media (max-width: 375px) {
 					  width: 15px;
+					}
+					@media (max-width: 320px) {
+					  display: none;
+					  width: 0px;
+					  height: 0px;
 					}
 				  }
                   a {
@@ -926,6 +941,9 @@ section.content-wrapper {
 					}
 					@media (max-width: 375px) {
 					  font-size: 13px;
+					}
+					@media (max-width: 375px) {
+					  font-size: 12px;
 					}
                     &:hover {
                       color: #0c508e;
@@ -956,6 +974,11 @@ section.content-wrapper {
 				  @media (max-width: 375px) {
 					width: 75px;
 				  }
+				  @media (max-width: 320px) {
+					width: 55px;
+					height: 25px;
+					padding: 7px;
+				  }
                   a {
                     color: #0c508e;
                     font-size: 17px;
@@ -981,6 +1004,9 @@ section.content-wrapper {
                     width: 2px;
                     height: 40px;
                     background-color: #dcdcdc;
+					@media (max-width: 320px) {
+					  height: 25px;
+					}
                   }
                 }
               }

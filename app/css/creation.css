@@ -220,6 +220,9 @@ select.m-select {
   @media (max-width: 375px) {
     select.m-select {
       background-position: 112% 50%; } }
+  @media (max-width: 320px) {
+    select.m-select {
+      background-position: 104% 50%; } }
 
 .star {
   color: #fbd000;
@@ -733,6 +736,9 @@ select.m-select {
   @media (max-width: 375px) {
     select.m-select {
       background-position: 112% 50%; } }
+  @media (max-width: 320px) {
+    select.m-select {
+      background-position: 104% 50%; } }
 
 .star {
   color: #fbd000;
@@ -1149,6 +1155,9 @@ section.content-wrapper {
           @media (max-width: 767px) {
             section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav {
               width: 330px; } }
+          @media (max-width: 320px) {
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav {
+              width: 295px; } }
           section.content-wrapper .content-left-wrapper .lp-new-campaign #step2 ul.questions li#question4 .question-inner .uploader-file .upload-btn .upload-nav .upload-btn-wrapper {
             width: 50%;
             height: 40px;
@@ -1384,6 +1393,9 @@ section.content-wrapper {
           @media (max-width: 960px) {
             section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-title span {
               font-size: 14px; } }
+          @media (max-width: 320px) {
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-title span {
+              font-size: 12px; } }
         section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh {
           width: 167px;
           height: 56px;
@@ -1402,6 +1414,10 @@ section.content-wrapper {
           @media (max-width: 375px) {
             section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh {
               width: 75px; } }
+          @media (max-width: 320px) {
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh {
+              width: 55px;
+              height: 25px; } }
           section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh img {
             width: 25px;
             margin-right: 5px; }
@@ -1411,6 +1427,11 @@ section.content-wrapper {
             @media (max-width: 375px) {
               section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh img {
                 width: 15px; } }
+            @media (max-width: 320px) {
+              section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh img {
+                display: none;
+                width: 0px;
+                height: 0px; } }
           section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh a {
             color: #0c508e;
             font-size: 17px;
@@ -1424,6 +1445,9 @@ section.content-wrapper {
             @media (max-width: 375px) {
               section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh a {
                 font-size: 13px; } }
+            @media (max-width: 375px) {
+              section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh a {
+                font-size: 12px; } }
             section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step5-show-refresh a:hover {
               color: #0c508e; }
         section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step-show-btn {
@@ -1450,6 +1474,11 @@ section.content-wrapper {
           @media (max-width: 375px) {
             section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step-show-btn {
               width: 75px; } }
+          @media (max-width: 320px) {
+            section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step-show-btn {
+              width: 55px;
+              height: 25px;
+              padding: 7px; } }
           section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step-show-btn a {
             color: #0c508e;
             font-size: 17px;
@@ -1472,6 +1501,9 @@ section.content-wrapper {
             width: 2px;
             height: 40px;
             background-color: #dcdcdc; }
+            @media (max-width: 320px) {
+              section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-show-panel .step-show-btn span {
+                height: 25px; } }
       section.content-wrapper .content-left-wrapper .lp-new-campaign #step5 ul.questions li#question14 .question-inner .step5-facebook-wrapper {
         width: 100%;
         display: flex;
