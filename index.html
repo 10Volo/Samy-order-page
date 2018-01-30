@@ -60,8 +60,9 @@
         </div>
     </div>
 </header>
+
 <section class="steps">
-    <div class="container">
+    <div class="container width-100">
         <ul>
             <li><a class="link-step" id="step-1">(1) Objective</a></li>
             <li><a class="link-step" id="step-2">(2) Adcopy</a></li>
@@ -73,7 +74,7 @@
 </section>
 <section class="content-wrapper">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6 col-sm-12">
             <div class="content-left-wrapper" id="scroll-1">
                 <div class="lp-new-campaign">
                     <form method="post" id="k">
@@ -207,8 +208,10 @@
                                         </div>
                                         <div class="m-input-wrapper">
                                             <input class="m-input" type="text">
+	                                        <!--<div class="m-textarea">-->
+		                                        <!--<textarea name="" rows="0"></textarea>-->
+	                                        <!--</div>-->
                                         </div>
-
                                     </div>
                                 </li>
                             </ul>
@@ -228,6 +231,19 @@
                                                     <option value="">Item #3</option>
                                                     <option value="">Item #4</option>
                                                 </select>
+	
+	                                            <!--<div class="drop-down on-enter">-->
+		                                            <!--<div class="selected">-->
+			                                            <!--<a href="#"><span>Type or select an option</span></a>-->
+		                                            <!--</div>-->
+		                                            <!--<div class="options">-->
+			                                            <!--<ul>-->
+				                                            <!--<li><a href="#">Item #1<span class="value">1</span></a></li>-->
+				                                            <!--<li><a href="#">Item #2<span class="value">2</span></a></li>-->
+				                                            <!--<li><a href="#">Item #3<span class="value">3</span></a></li>-->
+			                                            <!--</ul>-->
+		                                            <!--</div>-->
+	                                            <!--</div>-->
                                             </div>
                                         </div>
                                     </div>
@@ -366,7 +382,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 displ-none">
             <div class="content-right-wrapper" id="scroll-2">
                 <div id="is-step-2" class="step step2-facebook-post">
                     <div class="step2-panel-nav">
@@ -1302,6 +1318,26 @@
     </div>
 </footer>
 
-
+<script>
+	//TOGGLING NESTED ul
+	$(".drop-down .selected a").click(function() {
+		$(".drop-down .options ul").toggle();
+	});
+	
+	//SELECT OPTIONS AND HIDE OPTION AFTER SELECTION
+	$(".drop-down .options ul li a").click(function() {
+		var text = $(this).html();
+		$(".drop-down .selected a span").html(text);
+		$(".drop-down .options ul").hide();
+	});
+	
+	
+	//HIDE OPTIONS IF CLICKED ANYWHERE ELSE ON PAGE
+	$(document).bind('click', function(e) {
+		var $clicked = $(e.target);
+		if (! $clicked.parents().hasClass("drop-down"))
+			$(".drop-down .options ul").hide();
+	});
+</script>
 </body>
 </html>

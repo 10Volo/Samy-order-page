@@ -3,6 +3,9 @@
   font-size: 65px;
   position: relative;
   padding: 0 1rem; /* space out the stars */
+  @media (max-width: 1024px) {
+	font-size: 45px;
+  }
   &::before{
     position:absolute;
     top:0;
