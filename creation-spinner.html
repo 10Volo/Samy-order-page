@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="refresh" content="5; url=creation-shared.html" />
+	<!--redirect others page-->
+	<title>Creative</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="app/css/creation-spinner.css">
+	<!--for date picker-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	
+	<!--for datepicker-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="app/js/main.js"></script>
+	<script src="https://use.fontawesome.com/8a677bed15.js"></script>
+	<!--for scroll-->
+	<script type="text/javascript" src="app/js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="app/js/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="app/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="app/js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="app/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+</head>
+<body>
+<header>
+	<div class="header-logo-wrapper">
+		<img src="app/img/header/logo.png" alt="">
+	</div>
+	<div class="header-menu-nav">
+		<div class="menu">
+			<ul>
+				<li class="items"><a href=""><img src="app/img/header/content-img-1.png" alt="" width="36" height="28">Create</a>
+				</li>
+				<li class="items"><a href=""><img src="app/img/header/content-img-2.png" alt="" width="34" height="27">Report</a>
+				</li>
+				<li class="items"><a href=""><img src="app/img/header/content-img-3.png" alt="" width="43" height="24">Optimize</a>
+				</li>
+				<li class="items"><a href=""><img src="app/img/header/content-img-4.png" alt="" width="26" height="28">Analyze
+				</a></li>
+			</ul>
+		</div>
+		<div class="toggle" onclick="menu_toggle(this.parentNode)">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="header-user-wrapper align-items-center">
+		<div class="user-avatar">
+			<img src="app/img/header/user.png" alt="">
+		</div>
+		<div class="user-name">
+			<span>User</span>
+			<div class="user-drop-down">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="steps">
+	<div class="container width-100">
+		<ul>
+			<li><a class="link-step" id="step-1">(1) Objective</a></li>
+			<li><a class="link-step" id="step-2">(2) Adcopy</a></li>
+			<li><a class="link-step" id="step-3">(3) Targeting</a></li>
+			<li><a class="link-step" id="step-4">(4) Budget</a></li>
+			<li><a class="link-step" id="step-5">(5) Review</a></li>
+		</ul>
+	</div>
+</section>
+
+<section class="creation-spinner">
+	<div class="spinner-wrapper">
+		<div class="spinner-tittle"><span>Publishing Your Campaign Now…</span></div>
+		<div class="spinner-line"></div>
+		<div class="spinner-warning">
+			<p>Please DO NOT click the back button or close the window while the campaign is being published.</p>
+		</div>
+		<div class="spinner-animation"><img src="app/img/content/creation-spinner-animation.png" alt=""></div>
+		<div class="spinner-info"><span>This will take a few minutes depending on how many ads you created</span></div>
+	</div>
+</section>
+
+<script>
+//setTimeout(function () {
+//		window.location.href = "creation-shared.html";
+//	}, 5000);
+</script>
+<footer>
+	<div class="container">
+		<div class="footer-wrapper">
+			<div class="footer-menu">
+				<ul>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">TERMS OF USE</a></li>
+					<li><a href="">POLICY</a></li>
+				</ul>
+			</div>
+			<div class="footer-social">
+				<div class="footer-social-wrapper">
+					<ul>
+						<li><a href=""><img src="app/img/footer/facebook.png" alt=""></a></li>
+						<li><a href=""><img src="app/img/footer/twitter.png" alt=""></a></li>
+						<li><a href=""><img src="app/img/footer/g-plus.png" alt=""></a></li>
+						<li><a href=""><img src="app/img/footer/youtube.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+	//TOGGLING NESTED ul
+	$(".drop-down .selected a").click(function() {
+		$(".drop-down .options ul").toggle();
+	});
+	
+	//SELECT OPTIONS AND HIDE OPTION AFTER SELECTION
+	$(".drop-down .options ul li a").click(function() {
+		var text = $(this).html();
+		$(".drop-down .selected a span").html(text);
+		$(".drop-down .options ul").hide();
+	});
+	
+	
+	//HIDE OPTIONS IF CLICKED ANYWHERE ELSE ON PAGE
+	$(document).bind('click', function(e) {
+		var $clicked = $(e.target);
+		if (! $clicked.parents().hasClass("drop-down"))
+			$(".drop-down .options ul").hide();
+	});
+	
+	// hide/show menu
+	function menu_toggle(header) {
+		header.classList.toggle('show');
+	}
+</script>
+</body>
+</html>

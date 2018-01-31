@@ -17,10 +17,7 @@ $(function () { // wait for document ready
 	// 	});
 	// });
 	
-	// hide/show menu
-	function menu_toggle(header) {
-		header.classList.toggle('show');
-	}
+	
 
 	// for accordion
 	var acc = document.getElementsByClassName("accordion");
@@ -243,15 +240,7 @@ $(function () { // wait for document ready
 
 	}
 
-	function setRating(){
-		[].forEach.call(stars, function(star, index){
-			if(rating > index){
-				star.classList.add('rated');
-			}else{
-				star.classList.remove('rated');
-			}
-		});
-	}
+	
 
 	// SCROLL ON ENTER
 	document.getElementById("question1").addEventListener("keydown", function(event) {
@@ -281,7 +270,13 @@ $(document).bind('click', function(e) {
 		$(".drop-down .options ul").hide();
 });
 
-
-function menu_toggle(header) {
-	header.classList.toggle('show');
+// rate
+function setRating(){
+	[].forEach.call(stars, function(star, index){
+		if(rating > index){
+			star.classList.add('rated');
+		}else{
+			star.classList.remove('rated');
+		}
+	});
 }
