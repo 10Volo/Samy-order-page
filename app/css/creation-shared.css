@@ -818,6 +818,9 @@ header {
   background-color: #ffffff;
   box-shadow: 0px 3px 5px #bbb;
   padding: 10px 0; }
+  @media (max-width: 414px) {
+    header {
+      padding: 15px 0; } }
   @media (max-width: 405px) {
     header {
       flex-direction: column;
@@ -933,6 +936,9 @@ header {
     @media (max-width: 500px) {
       header .header-menu-nav .toggle {
         top: 15px; } }
+    @media (max-width: 414px) {
+      header .header-menu-nav .toggle {
+        top: 10px; } }
     @media (max-width: 405px) {
       header .header-menu-nav .toggle {
         top: 30px; } }
@@ -990,7 +996,7 @@ section.steps {
   display: flex;
   align-items: center;
   box-shadow: 0px 3px 5px #bbb; }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     section.steps {
       display: none; } }
   @media (max-width: 767px) {
@@ -1074,12 +1080,18 @@ section.creation-shred {
         width: 650px;
         height: auto;
         padding: 10px; } }
+    @media (max-width: 414px) {
+      section.creation-shred .shred-wrapper {
+        width: 400px; } }
     @media (max-width: 375px) {
       section.creation-shred .shred-wrapper {
         width: 280px; } }
     @media (max-width: 767px) {
       section.creation-shred .shred-wrapper .shred-logo img {
         width: 40px; } }
+    @media (max-width: 414px) {
+      section.creation-shred .shred-wrapper .shred-logo img {
+        width: 35px; } }
     @media (max-width: 767px) {
       section.creation-shred .shred-wrapper .shred-title {
         margin: 10px 0; } }
@@ -1094,6 +1106,9 @@ section.creation-shred {
       @media (max-width: 767px) {
         section.creation-shred .shred-wrapper .shred-title span {
           font-size: 20px; } }
+      @media (max-width: 414px) {
+        section.creation-shred .shred-wrapper .shred-title span {
+          font-size: 16px; } }
       @media (max-width: 375px) {
         section.creation-shred .shred-wrapper .shred-title span {
           font-size: 16px; } }
@@ -1170,6 +1185,10 @@ section.creation-shred {
       @media (max-width: 767px) {
         section.creation-shred .shred-wrapper .shred-facebook-btn a {
           height: 45px; } }
+      @media (max-width: 414px) {
+        section.creation-shred .shred-wrapper .shred-facebook-btn a {
+          height: 40px;
+          font-size: 16px; } }
       @media (max-width: 375px) {
         section.creation-shred .shred-wrapper .shred-facebook-btn a {
           width: auto; } }
@@ -1193,6 +1212,11 @@ section.creation-shred {
       @media (max-width: 767px) {
         section.creation-shred .shred-btn a {
           height: 45px; } }
+      @media (max-width: 414px) {
+        section.creation-shred .shred-btn a {
+          width: 400px;
+          height: 40px;
+          font-size: 15px; } }
       @media (max-width: 375px) {
         section.creation-shred .shred-btn a {
           text-align: center;

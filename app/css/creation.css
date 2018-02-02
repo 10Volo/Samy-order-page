@@ -1043,7 +1043,7 @@ section.content-wrapper {
   top: 110px;
   margin-bottom: 55px; }
   section.content-wrapper .content-left-wrapper {
-    height: 70vh;
+    height: 80vh;
     background-color: #ffffff;
     padding-top: 32%;
     padding-left: 50px;
@@ -1514,7 +1514,7 @@ section.content-wrapper {
             height: 100%; } }
   section.content-wrapper .content-right-wrapper {
     background-color: #ffffff;
-    height: 70vh;
+    height: 80vh;
     padding-top: 30px;
     padding-left: 50px;
     padding-right: 50px;

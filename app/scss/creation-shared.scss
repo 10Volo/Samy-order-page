@@ -97,6 +97,9 @@ header {
   background-color: #ffffff;
   box-shadow: 0px 3px 5px #bbb;
   padding: 10px 0;
+  @media (max-width: 414px) {
+	padding: 15px 0;
+  }
   @media (max-width: 405px) {
 	flex-direction: column;
 	align-items: baseline;
@@ -229,6 +232,9 @@ header {
 	  @media (max-width: 500px) {
 		top: 15px;
 	  }
+	  @media (max-width: 414px) {
+		top: 10px;
+	  }
 	  @media (max-width: 405px) {
 		top: 30px;
 	  }
@@ -299,7 +305,7 @@ section.steps {
   display: flex;
   align-items: center;
   box-shadow: 0px 3px 5px #bbb;
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
 	display: none;
   }
   .width-100 {
@@ -397,6 +403,9 @@ section.creation-shred {
 	  height: auto;
 	  padding: 10px;
 	}
+	@media (max-width: 414px) {
+	  width: 400px;
+	}
 	@media (max-width: 375px) {
 	  width: 280px;
 	}
@@ -404,6 +413,9 @@ section.creation-shred {
 	  img {
 		@media (max-width: 767px) {
 		  width: 40px;
+		}
+		@media (max-width: 414px) {
+		  width: 35px;
 		}
 	  }
 	}
@@ -421,6 +433,9 @@ section.creation-shred {
 		font-weight: 700;
 		@media (max-width: 767px) {
 		  font-size: 20px;
+		}
+		@media (max-width: 414px) {
+		  font-size: 16px;
 		}
 		@media (max-width: 375px) {
 		  font-size: 16px;
@@ -510,6 +525,10 @@ section.creation-shred {
 		@media (max-width: 767px) {
 		  height: 45px;
 		}
+		@media (max-width: 414px) {
+		  height: 40px;
+		  font-size: 16px;
+		}
 		@media (max-width: 375px) {
 		  width: auto;
 		}
@@ -536,6 +555,11 @@ section.creation-shred {
 	  font-weight: 400;
 	  @media (max-width: 767px) {
 		height: 45px;
+	  }
+	  @media (max-width: 414px) {
+		width: 400px;
+		height: 40px;
+		font-size: 15px;
 	  }
 	  @media (max-width: 375px) {
 		text-align: center;

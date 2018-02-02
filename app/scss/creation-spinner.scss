@@ -97,6 +97,9 @@ header {
   background-color: #ffffff;
   box-shadow: 0px 3px 5px #bbb;
   padding: 10px 0;
+  @media (max-width: 414px) {
+	padding: 15px 0;
+  }
   @media (max-width: 405px) {
 	flex-direction: column;
 	align-items: baseline;
@@ -229,6 +232,9 @@ header {
 	  @media (max-width: 500px) {
 		top: 15px;
 	  }
+	  @media (max-width: 414px) {
+		top: 10px;
+	  }
 	  @media (max-width: 405px) {
 		top: 30px;
 	  }
@@ -299,7 +305,7 @@ section.steps {
   display: flex;
   align-items: center;
   box-shadow: 0px 3px 5px #bbb;
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
 	display: none;
   }
   .width-100 {
@@ -397,6 +403,9 @@ section.creation-spinner {
 	  height: auto;
 	  padding: 20px;
 	}
+	@media (max-width: 414px) {
+	  width: 400px;
+  	}
 	@media (max-width: 375px) {
 	  width: 280px;
 	  padding: 20px 10px;
@@ -410,6 +419,9 @@ section.creation-spinner {
 		font-family: Raleway;
 		font-size: 25px;
 		font-weight: 700;
+		@media (max-width: 414px) {
+		  font-size: 18px;
+		}
 		@media (max-width: 375px) {
 		  font-size: 16px;
 		}
@@ -426,12 +438,15 @@ section.creation-spinner {
 	.spinner-warning {
 	  text-align: center;
 	  margin: 0 100px;
-	  @media (max-width: 375px) {
+	  @media (max-width: 414px) {
 		margin: 0;
 	  }
 	  p {
 		font-size: 20px;
 		line-height: 29px;
+		@media (max-width: 414px) {
+		  font-size: 16px;
+		}
 		@media (max-width: 375px) {
 		  font-size: 14px;
 		  line-height: 20px;
@@ -451,6 +466,9 @@ section.creation-spinner {
 		@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 		@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 		@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+		@media (max-width: 414px) {
+		  width: 120px;
+		}
 		@media (max-width: 375px) {
 		  width: 80px;
 		}
