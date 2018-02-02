@@ -1040,8 +1040,8 @@ section.steps {
 
 section.content-wrapper {
   position: relative;
-  top: 110px;
-  margin-bottom: 55px; }
+  top: 100px;
+  margin-bottom: 80px; }
   section.content-wrapper .content-left-wrapper {
     height: 80vh;
     background-color: #ffffff;
